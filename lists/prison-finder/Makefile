@@ -12,6 +12,7 @@ prison-urls.tsv:
 	
 prison-cache: prison-urls.tsv
 	@mkdir -p cache
+	[[ -e cache/wymott ]] || \
 	cd cache && cat ../prison-urls.tsv \
 	| xargs -P4 -n 1 curl -s -S -O
 

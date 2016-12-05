@@ -12,6 +12,7 @@ prison-urls.tsv:
 	
 prison-cache: prison-urls.tsv
 	@mkdir -p cache
+	[[ -e cache/wymott ]] || \
 	cd cache && cat ../prison-urls.tsv \
 	| xargs -P4 -n 1 curl -s -S -O
 
@@ -20,3 +21,6 @@ bundle-install:
 
 prison-address-text.tsv: prison-cache bundle-install
 	bundle exec ruby ./bin/scrape_address.rb > $@
+
+clean:
+	rm -f prison-address-text.tsv

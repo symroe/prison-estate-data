@@ -21,3 +21,6 @@ bundle-install:
 
 prison-address-text.tsv: prison-cache bundle-install
 	bundle exec ruby ./bin/scrape_address.rb > $@
+
+clean:
+	rm -f prison-address-text.tsv

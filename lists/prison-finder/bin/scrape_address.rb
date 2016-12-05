@@ -45,10 +45,10 @@ Dir.glob("./cache/*").each do |f|
 		x.squeeze(' ').
 			sub('<!--?xmlnamespace prefix = st1 /?--> ','').
 			sub(/ \(Sat Nav.*/,'').
-			gsub(', ','|').
 			sub('     ','').
-			strip
-	end if address
+			strip.
+			split(', ')
+	end.flatten if address
 	postcode = address.pop if address
 
 	if address.nil? && name == 'Humber'

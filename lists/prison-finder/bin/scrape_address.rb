@@ -1,6 +1,6 @@
 require 'nokogiri'
 
-puts "prison\taddress-text"
+puts "prison\taddress-text\tpostcode"
 Dir.glob("./cache/*").each do |f| 
 	doc = Nokogiri::HTML(IO.read(f).gsub('div class="text"', 'p').gsub('<strong>Address','<p><strong>Address'))
 	if doc.at('title')
@@ -39,5 +39,17 @@ Dir.glob("./cache/*").each do |f|
 					opc || w.size == 0 
 				end
 	end.first
-  puts address.nil? ? "" : address.join('|')
+	address = address.first.split(",") if address && address.size == 1
+	address = address.map do |x|
+		x.squeeze(' ').
+			sub('<!--?xmlnamespace prefix = st1 /?--> ','').
+			sub(/ \(Sat Nav.*/,'').
+			gsub(', ','|').
+			sub('     ','').
+			strip
+	end if address
+	postcode = address.pop if address
+	print address.nil? ? "" : address.join('|')
+	print "\t"
+	puts postcode.to_s
 end

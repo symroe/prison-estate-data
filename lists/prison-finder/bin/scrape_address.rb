@@ -82,10 +82,12 @@ end
 def ignore? name
   name == 'CEM Abertawe' ||
   name == 'CEM Caerdydd' ||
-  name == 'Usk/Prescoed'
+  name == 'Usk/Prescoed' ||
+  name == 'Usk'
 end
 
 puts "prison\taddress-text\tpostcode"
 name_address_postcodes.
   reject{|name, a, p| ignore?(name)}.
+  sort_by{|name, a, p| name}.
   each {|p| puts p.join("\t")}

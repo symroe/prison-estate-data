@@ -6,3 +6,13 @@
 # The Prison Estate in England and Wales, including public and contracted prisons,
 # NOMS Immigration Removal Centres operated on behalf of the Home Office and
 # Secure Training Centre.
+#
+
+prison_estate.tsv: prison_estate_and_cpas.csv
+	bundle exec ruby clean_up.rb > prison_estate.tsv
+
+clean:
+	rm -f prison_estate.tsv
+
+init:
+	bundle install

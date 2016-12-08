@@ -1,14 +1,19 @@
 require 'nokogiri'
 
+def clean_name text
+	name = text.
+		to_s.
+		sub(/ (Prison|IRC) (contacts|information)/i,'').
+		sub(/Information for /i,'').
+		sub(/HMP and YOI /,'').
+		sub(/HMP /,'')
+end
+
 puts "prison\taddress-text\tpostcode"
 Dir.glob("./cache/*").each do |f| 
 	doc = Nokogiri::HTML(IO.read(f).gsub('div class="text"', 'p').gsub('<strong>Address','<p><strong>Address'))
 	if doc.at('title')
-		name = doc.at('title').
-			inner_text.
-			to_s.
-			sub(/ (Prison|IRC) (contacts|information)/i,'').
-			sub(/Information for /i,'')
+		name = clean_name(doc.at('title').inner_text)
 		print name
 	end
 	print "\t"

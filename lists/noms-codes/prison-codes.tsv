@@ -1,16 +1,16 @@
 lids	nomis	name
-AK	AKI	Acklinglon
+AK	AKI	Acklington
 AN		Aidington
 AL	ALI	Albany
 AC	ACI	Altcourse
 AS	ASI	Ashfield
 AW	AWI	Ashwell
-AG		Askham Grange
+AG	AGI	Askham Grange
 AY	AYI	Aylesbury
 BF	BFI	Bedford
 BA	BAI	Belmarsh
 BM	BMI	Birmingham
-BT		Blakenhurst
+BT	BTI	Blakenhurst
 BH	BHI	Blantyre House
 BD	BDI	Blundeston
 BS	BSI	Brinsford
@@ -34,9 +34,9 @@ CK	CKI	Cookham Wood
 DA	CYI	Dartmoor
 DT	DTI	Deerbolt
 DN	DNI	Doncaster
-DR	DRI	Dorchesler
+DR	DRI	Dorchester
 	DGI	Dovegate
-DV		Dover
+DV	DVI	Dover
 DW	DWI	Downview
 DH	DHI	Drake Hall
 DM	DMI	Durham
@@ -45,14 +45,14 @@ EP	EWI	Eastwood Park
 	NEI	Edmunds Hill
 EY	EYI	Elmley
 EE	EEI	Erlestoke
-EV	EVI	Everlhorpe
+EV	EVI	Everthorpe
 EX	EXI	Exeter
-PS	FSI	Featherstone
+FS	FSI	Featherstone
 FM	FMI	Fellham
 FD	FDI	Ford
 FB	FBI	Forest Bank
-FH	FHI	FoslonHall
-FK		Frankland
+FH	FHI	Foston Hall
+FK	FKI	Frankland
 FN	FNI	Full Sunon
 GH	GHI	Garth
 GT	GTI	Gartree
@@ -61,7 +61,7 @@ GL	GLI	Gloucester
 GN		Grendon
 	GNI	Grendon/Springhill
 GM	GMI	Guys Marsh
-HR	HRI	Hasiar
+HR	HRI	Haslar
 HD		Hatfield
 HV	HVI	Haverigg
 	HEI	Hewell
@@ -71,26 +71,26 @@ HP	HPI	Highpoint
 HI	HII	Hindley
 HB	HBI	Hollesley Bay
 HY	HYI	Holloway
-HH		Holme House
+HH	HHI	Holme House
 HL	HLI	Hull
 	HMI	Humber
-HC	HCI	Hunteroombe
-KT		Kennel
+HC	HCI	Huntercombe
+KT	KTI	Kennet
 PT	PTI	Kingston
 KM	KMI	Kirkham
 KV	KVI	Kirklevington
-LM	LMI	Lalchmere House
+LM	LMI	Latchmere House
 LA	LAI	Lancaster
 LF	LFI	Lancaster Farms
 LE	LEI	Leeds
-LC		Leicester
+LC	LCI	Leicester
 LW	LWI	Lewes
 LY	LYI	Leyhill
 LI	LII	Lincoln
 LH	LHI	Lindholme
 LT	LTI	Littlehey
 LP	LPI	Liverpool
-LL	LLI	Long Larlin
+LL	LLI	Long Lartin
 LN	LNI	Low Newton
 LG	LGI	Lowdham Grange
 MS	MSI	Maidstone
@@ -99,17 +99,17 @@ MD		Moorland
 	MDI	Moorland Closed
 	HDI	Moorland Open
 MH	MHI	Morton Hall
-MT	MTI	Mounl
-NH		New Hall
+MT	MTI	Mount
+NH	NHI	New Hall
 NS	NSI	North Sea Camp
-NN	NNI	Northallerlon
+NN	NNI	Northallerton
 NW	NWI	Norwich
 NM	NMI	Nottingham
 ON	ONI	Onley
-	BNY	Oxford
+BNY		Oxford
 PA	PRI	Parc
 PK	PKI	Parkhurst
-PB	PBI	Pelerborough
+PB	PBI	Peterborough
 PV	PVI	Pentonville
 PD	PDI	Portland
 	UPI	Prescoed
@@ -120,7 +120,7 @@ RS	RSI	Risley
 RC	RCI	Rochester
 RH	RHI	Rye Hill
 SD	SDI	Send
-SM	SMI	Sheplon Mallet
+SM	SMI	Shepton Mallet
 SY	SYI	Shrewsbury
 SP	SPI	Spring Hill (See Grendon)
 SF	SFI	Stafford
@@ -140,15 +140,15 @@ VE	VEI	Verne
 WD	WDI	Wakefield
 WW	WWI	Wandsworth
 	WII	Warren Hill
-WL		Wayland
-WE	WEI	Wealslun
+WL	WLI	Wayland
+WE	WEI	Wealstun
 WB	WBI	Wellingborough
 WN	WNI	Werrington
 WY	WYI	Wetherby
-WT	WTI	Whallon
+WT	WTI	Whatton
 WR	WRI	Whitemoor
 WC	WCI	Winchester
 WO	WOI	Wolds
 WH	WHI	Woodhill
 WS	WSI	Wormwood Scrubs
-WM	WMI	Wymolt
+WM	WMI	Wymott

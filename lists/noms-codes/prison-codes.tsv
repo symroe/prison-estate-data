@@ -1,154 +1,154 @@
 lids	nomis	name
-AC	ACI	Altcourse
 AK	AKI	Acklinglon
+AN		Aidington
 AL	ALI	Albany
+AC	ACI	Altcourse
 AS	ASI	Ashfield
 AW	AWI	Ashwell
+AG		Askham Grange
 AY	AYI	Aylesbury
-BA	BAI	Belmarsh
-BC	BCI	Buckley Hall
-BD	BDI	Blundeston
 BF	BFI	Bedford
-BH	BHI	Blantyre House
-BK	BKI	Brockhill
-BL	BLI	Bristol
+BA	BAI	Belmarsh
 BM	BMI	Birmingham
-BM	BMI	Bure
-BNB	BNI	Bullingdon
-	BNY	Oxford
+BT		Blakenhurst
+BH	BHI	Blantyre House
+BD	BDI	Blundeston
 BS	BSI	Brinsford
-BU	BUI	Bullwood Hall
+BL	BLI	Bristol
 BX	BXI	Brixton
+BK	BKI	Brockhill
 BZ	BZI	Bronzfield
-CD	CDI	Chelmsford
-CF	CFI	Cardiff
+BC	BCI	Buckley Hall
+BNB	BNI	Bullingdon
+BU	BUI	Bullwood Hall
+BM	BMI	Bure
 CH	CHI	Camp Hill
-CK	CKI	Cookham Wood
-CL	CLI	Coldingley
+CY	CYI	Canterbury
+CF	CFI	Cardiff
 CS	CSI	Castinglon
 CW	CWI	Channings Wood
-CY	CYI	Canterbury
+CD	CDI	Chelmsford
+CR		Colchester
+CL	CLI	Coldingley
+CK	CKI	Cookham Wood
 DA	CYI	Dartmoor
-	DGI	Dovegate
-DH	DHI	Drake Hall
-DM	DMI	Durham
+DT	DTI	Deerbolt
 DN	DNI	Doncaster
 DR	DRI	Dorchesler
-DT	DTI	Deerbolt
+	DGI	Dovegate
+DV		Dover
 DW	DWI	Downview
-EE	EEI	Erlestoke
-EH	EHI	Standford Hill
+DH	DHI	Drake Hall
+DM	DMI	Durham
 ES	ESI	East Sutton Park
-EV	EVI	Everlhorpe
 EP	EWI	Eastwood Park
-EX	EXI	Exeter
+	NEI	Edmunds Hill
 EY	EYI	Elmley
-FB	FBI	Forest Bank
-FD	FDI	Ford
-FH	FHI	FoslonHall
-FM	FMI	Fellham
-FN	FNI	Full Sunon
+EE	EEI	Erlestoke
+EV	EVI	Everlhorpe
+EX	EXI	Exeter
 PS	FSI	Featherstone
+FM	FMI	Fellham
+FD	FDI	Ford
+FB	FBI	Forest Bank
+FH	FHI	FoslonHall
+FK		Frankland
+FN	FNI	Full Sunon
 GH	GHI	Garth
-GL	GLI	Gloucester
-GM	GMI	Guys Marsh
-	GNI	Grendon/Springhill
-GP	GPI	Glen Parva
 GT	GTI	Gartree
-HB	HBI	Hollesley Bay
-HC	HCI	Hunteroombe
-	HDI	Moorland Open
+GP	GPI	Glen Parva
+GL	GLI	Gloucester
+GN		Grendon
+	GNI	Grendon/Springhill
+GM	GMI	Guys Marsh
+HR	HRI	Hasiar
+HD		Hatfield
+HV	HVI	Haverigg
 	HEI	Hewell
 HG	HGI	Hewell Grange
-HI	HII	Hindley
-HL	HLI	Hull
-HM	HMI	Humber
 HO	HOI	Highdown
 HP	HPI	Highpoint
-HR	HRI	Hasiar
-HV	HVI	Haverigg
+HI	HII	Hindley
+HB	HBI	Hollesley Bay
 HY	HYI	Holloway
+HH		Holme House
+HL	HLI	Hull
+HM	HMI	Humber
+HC	HCI	Hunteroombe
+KT		Kennel
+PT	PTI	Kingston
 KM	KMI	Kirkham
 KV	KVI	Kirklevington
-LA	LAI	Lancaster
-LE	LEI	Leeds
-LF	LFI	Lancaster Farms
-LG	LGI	Lowdham Grange
-LH	LHI	Lindholme
-LI	LII	Lincoln
-LL	LLI	Long Larlin
 LM	LMI	Lalchmere House
-LN	LNI	Low Newton
-LP	LPI	Liverpool
-LT	LTI	Littlehey
+LA	LAI	Lancaster
+LF	LFI	Lancaster Farms
+LE	LEI	Leeds
+LC		Leicester
 LW	LWI	Lewes
 LY	LYI	Leyhill
-	MDI	Moorland Closed
-MH	MHI	Morton Hall
-MR	MRI	Manchester
+LI	LII	Lincoln
+LH	LHI	Lindholme
+LT	LTI	Littlehey
+LP	LPI	Liverpool
+LL	LLI	Long Larlin
+LN	LNI	Low Newton
+LG	LGI	Lowdham Grange
 MS	MSI	Maidstone
+MR	MRI	Manchester
+MD		Moorland
+	MDI	Moorland Closed
+	HDI	Moorland Open
+MH	MHI	Morton Hall
 MT	MTI	Mounl
-	NEI	Edmunds Hill
-NM	NMI	Nottingham
-NN	NNI	Northallerlon
+NH		New Hall
 NS	NSI	North Sea Camp
+NN	NNI	Northallerlon
 NW	NWI	Norwich
+NM	NMI	Nottingham
 ON	ONI	Onley
-PB	PBI	Pelerborough
-PD	PDI	Portland
-PK	PKI	Parkhurst
-PN	PNI	Preston
+	BNY	Oxford
 PA	PRI	Parc
-PT	PTI	Kingston
+PK	PKI	Parkhurst
+PB	PBI	Pelerborough
 PV	PVI	Pentonville
-RC	RCI	Rochester
-RD	RDI	Reading
-RH	RHI	Rye Hill
+PD	PDI	Portland
+	UPI	Prescoed
+PN	PNI	Preston
 RN	RNI	Ranby
+RD	RDI	Reading
 RS	RSI	Risley
+RC	RCI	Rochester
+RH	RHI	Rye Hill
 SD	SDI	Send
-SF	SFI	Stafford
-SH	SHI	Stoke Heath
-SK	SKI	Stocken
-SL	SLI	Swaleside
 SM	SMI	Sheplon Mallet
-SN	SNI	Swinfen Hall
+SY	SYI	Shrewsbury
 SP	SPI	Spring Hill (See Grendon)
+SF	SFI	Stafford
+EH	EHI	Standford Hill
+SK	SKI	Stocken
+SH	SHI	Stoke Heath
 ST	STI	Styal
 SU	SUI	Sudbury
+SL	SLI	Swaleside
 SW	SWI	Swansea
-SY	SYI	Shrewsbury
+SN	SNI	Swinfen Hall
+TACK		Tackler Analytical
+	WAI	The Weare
 TC	TCI	Thorn Cross
 UK	UKI	Usk/Prescoed
-	UPI	Prescoed
 VE	VEI	Verne
-	WAI	The Weare
-WB	WBI	Wellingborough
-WC	WCI	Winchester
 WD	WDI	Wakefield
-WE	WEI	Wealslun
-WH	WHI	Woodhill
-	WII	Warren Hill
-WM	WMI	Wymolt
-WN	WNI	Werrington
-WO	WOI	Wolds
-WR	WRI	Whitemoor
-WS	WSI	Wormwood Scrubs
-WT	WTI	Whallon
 WW	WWI	Wandsworth
-WY	WYI	Wetherby
-AG		Askham Grange
-AN		Aidington
-BT		Blakenhurst
-CR		Colchester
-DV		Dover
-FK		Frankland
-GN		Grendon
-HD		Hatfield
-HH		Holme House
-KT		Kennel
-LC		Leicester
-MD		Moorland
-NH		New Hall
-TACK		Tackler Analytical
+	WII	Warren Hill
 WL		Wayland
+WE	WEI	Wealslun
+WB	WBI	Wellingborough
+WN	WNI	Werrington
+WY	WYI	Wetherby
+WT	WTI	Whallon
+WR	WRI	Whitemoor
+WC	WCI	Winchester
+WO	WOI	Wolds
+WH	WHI	Woodhill
+WS	WSI	Wormwood Scrubs
+WM	WMI	Wymolt

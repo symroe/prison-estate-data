@@ -7,8 +7,8 @@ require_relative 'matcher'
 require_relative 'write_data'
 
 codes = LoadData.laa_codes ; nil
-nomis_codes = LoadData.nomis_codes ; nil
 prisons = LoadData.prison_finder_prisons ; nil
+former_prisons = LoadData.former_prisons ; nil
 jointly_managed_prison_second_location = LoadData.jointly_managed_prison_second_location ; nil
 official_names = LoadData.prison_map_prisons ; nil
 contracted_out = LoadData.contracted_out_prisons ; nil
@@ -33,5 +33,17 @@ prisons.sort_by{|p| Matcher.massage_name(p.prison)}.each do |prison|
     address,
     nil,
     end_date
+  ].join("\t")
+end
+
+former_prisons.each do |prison|
+  puts [
+    prison.prison,
+    prison.name,
+    prison.official_name,
+    nil,
+    nil,
+    nil,
+    prison.end_date
   ].join("\t")
 end

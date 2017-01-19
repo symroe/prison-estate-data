@@ -30,6 +30,10 @@ module LoadData
       remove_jointly_managed(prisons)
     end
 
+    def former_prisons
+      Morph.from_tsv read('../../former-prisons/prisons.tsv'), :former_prison
+    end
+
     def jointly_managed_prison_second_location
       prisons = Morph.from_tsv read('../../prison-finder/prison-address-text.tsv'), :prison
       prisons.select do |prison|

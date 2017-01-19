@@ -20,14 +20,14 @@ prisons.sort_by{|p| Matcher.massage_name(p.prison)}.each do |prison|
   name = prison.prison
   address = Matcher.address_uprn(prison, addresses)
   official_name = Matcher.match_official_name(name, official_names)
-  name = Matcher.short_name(name)
-  end_date = Matcher.end_date(name)
-  code = Matcher.match_code(name, codes)
+  short_name = Matcher.short_name(name)
+  end_date = Matcher.end_date(short_name)
+  code = Matcher.match_code(short_name, codes)
   binding.pry if code.blank?
-  company_number = Matcher.company_number(name, contracted_out)
+  company_number = Matcher.company_number(short_name, contracted_out)
   puts [
     code,
-    name,
+    short_name,
     official_name,
     company_number,
     address,

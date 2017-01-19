@@ -86,9 +86,9 @@ module Matcher
              # On 31 October 2011 HM Prison Acklington merged with
              # HM Prison Castington to form HMP Northumberland
              when 'Northumberland'
-               'ACKLINGTON'
+               return 'NL'
              when 'Thameside'
-               return 'TH'
+               return 'TS'
              when 'The Mount'
                'MOUNT'
              when 'Usk/Prescoed (Prescoed)'

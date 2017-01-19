@@ -79,7 +79,7 @@ MD	Moorland	HMP/YOI Moorland		100051984633
 MH	Morton Hall	HMIRC Morton Hall (IRC)		10006531346		
 NH	New Hall	HMP/YOI New Hall		63141057		
 NS	North Sea Camp	HMP North Sea Camp		100032166609		
-AK	Northumberland	HMP Northumberland	company:00842846	10024651947		
+NL	Northumberland	HMP Northumberland	company:00842846	10024651947		
 NW	Norwich	HMP/YOI Norwich		10009434824		
 NM	Nottingham	HMP/YOI Nottingham		200001412499		
 OW	Oakwood	HMP Oakwood	company:00390328	10090090220		
@@ -103,7 +103,7 @@ SU	Sudbury	HMP Sudbury		10070076922
 SL	Swaleside	HMP Swaleside		100062087838		
 SW	Swansea	HMP/YOI Swansea		100100986762		
 SN	Swinfen Hall	HMP/YOI Swinfen Hall		10013212207		
-TH	Thameside	HMP/YOI Thameside	company:07279250	10010227695		
+TS	Thameside	HMP/YOI Thameside	company:07279250	10010227695		
 MT	The Mount	HMP The Mount		200004050582		
 VE	The Verne	HMIRC The Verne (IRC)		10070565745		
 TC	Thorn Cross	HMP/YOI Thorn Cross		200000978972		
@@ -121,3 +121,30 @@ WC	Winchester	HMP/YOI Winchester		100062015988
 WH	Woodhill	HMP/YOI Woodhill		25006001		
 WS	Wormwood Scrubs	HMP/YOI Wormwood Scrubs		34020469		
 WM	Wymott	HMP/YOI Wymott		200004064883		
+AK	Acklington	HMP Acklington				2011-10-31
+AL	Albany	HMP Albany				2009-04
+AW	Ashwell	HMP Ashwell				2011
+BT	Blakenhurst	HMP Blakenhurst				2008-06-25
+BD	Blundeston	HMP Blundeston				2013-12
+BK	Brockhill	HMP Brockhill				2008-06-25
+BU	Bullwood Hall	HMP Bullwood Hall				2013-03-28
+CH	Camp Hill	HMP Camp Hill				2009-04
+CY	Canterbury	HMP Canterbury				2013-03-31
+CS	Castinglon	HMP Castinglon				2011-10-31
+DR	Dorchester	HMP Dorchester				2013-12
+NE	Edmunds Hill	HMP Edmunds Hill				2011-04
+EV	Everthorpe	HMP Everthorpe				2014-04
+GL	Gloucester	HMP Gloucester				2013
+HG	Hewell Grange	HMP Hewell Grange				2008-06-25
+HY	Holloway	HMP Holloway				2016-07
+PT	Kingston	HMP Kingston				2013-03-28
+LM	Latchmere House	HMP Latchmere House				2011-09
+LA	Lancaster	HMP Lancaster				2011
+NN	Northallerton	HMP Northallerton				2013-12
+PK	Parkhurst	HMP Parkhurst				2009-04
+RD	Reading	HMP Reading				2013-11
+SM	Shepton Mallet	HMP Shepton Mallet				2013-02-28
+SY	Shrewsbury	HMP Shrewsbury				2013-03
+WA	The Weare	HMP The Weare				2006
+WB	Wellingborough	HMP Wellingborough				2012-12-21
+WO	Wolds	HMP Wolds				2014-04

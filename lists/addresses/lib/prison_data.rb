@@ -18,7 +18,7 @@ puts %w[prison name official-name organisation address start-date end-date].join
 
 prisons.sort_by{|p| Matcher.massage_name(p.prison)}.each do |prison|
   name = prison.prison
-  address = Matcher.address_uprn(prison, addresses)
+  address = Matcher.address_uprn(name, prison, addresses)
   official_name = Matcher.match_official_name(name, official_names)
   short_name = Matcher.short_name(name)
   end_date = Matcher.end_date(short_name)

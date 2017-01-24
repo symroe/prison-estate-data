@@ -38,7 +38,7 @@ module LoadData
     end
 
     def former_prisons
-      Morph.from_tsv read('../../former-prisons/prisons.tsv'), :former_prison
+      Morph.from_tsv read('../../former-prisons/prisons.tsv'), :prison
     end
 
     def jointly_managed_prison_second_location

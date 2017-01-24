@@ -59,7 +59,7 @@ module LoadData
     end
 
     def addresses
-      Morph.from_csv(read('../address_street_postcode.csv'), :address)
+      Morph.from_csv(read('../../../../address-discovery-data-matching/lists/prison-data/prison-address-street-postcode.csv'), :address)
     end
   end
 end

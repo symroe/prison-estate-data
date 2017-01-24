@@ -1,30 +1,30 @@
-prison	nomis	name	official-name	start-date	end-date
-AK	AKI	Acklington	HMP Acklington		2011-10-31
-AL	ALI	Albany	HMP Albany		2009-04
-AW	AWI	Ashwell	HMP Ashwell		2011
-BT	BTI	Blakenhurst	HMP Blakenhurst		2008-06-25
-BD	BDI	Blundeston	HMP Blundeston		2013-12
-BK	BKI	Brockhill	HMP Brockhill		2008-06-25
-BU	BUI	Bullwood Hall	HMP Bullwood Hall		2013-03-28
-CH	CHI	Camp Hill	HMP Camp Hill		2009-04
-CY	CYI	Canterbury	HMP Canterbury		2013-03-31
-CS	CSI	Castington	HMP Castington		2011-10-31
-DR	DRI	Dorchester	HMP Dorchester		2013-12
-DV	DVI	Dover	HMIRC Dover		2015
-NE	NEI	Edmunds Hill	HMP Edmunds Hill		2011-04
-EV	EVI	Everthorpe	HMP Everthorpe		2014-04
-GL	GLI	Gloucester	HMP Gloucester		2013
-HR	HRI	Haslar	HMIRC Haslar		2015
-HG	HGI	Hewell Grange	HMP Hewell Grange		2008-06-25
-HY	HYI	Holloway	HMP Holloway		2016-07
-PT	PTI	Kingston	HMP Kingston		2013-03-28
-LM	LMI	Latchmere House	HMP Latchmere House		2011-09
-LA	LAI	Lancaster	HMP Lancaster		2011
-NN	NNI	Northallerton	HMP Northallerton		2013-12
-PK	PKI	Parkhurst	HMP Parkhurst		2009-04
-RD	RDI	Reading	HMP Reading		2013-11
-SM	SMI	Shepton Mallet	HMP Shepton Mallet		2013-02-28
-SY	SYI	Shrewsbury	HMP Shrewsbury		2013-03
-WA	WAI	The Weare	HMP The Weare		2006
-WB	WBI	Wellingborough	HMP Wellingborough		2012-12-21
-WO	WOI	Wolds	HMP Wolds		2014-04
+prison	nomis	name	official-name	start-date	end-date	address-text	postcode
+AK	AKI	Acklington	HMP Acklington		2011-10-31	HMP Acklington|Acklington|Morpeth|Northumberland	NE65 9XF
+AL	ALI	Albany	HMP Albany		2009-04	HMP Albany|55 Parkhurst Road|Newport|Isle of Wight	PO30 5RS
+AW	AWI	Ashwell	HMP Ashwell		2011	HMP Ashwell|Oakham|Rutland	LE15 7LF
+BT	BTI	Blakenhurst	HMP Blakenhurst		2008-06-25	HMP Blakenhurst|Hewell Lane|Redditch	B97 6QS
+BD	BDI	Blundeston	HMP Blundeston		2013-12	HMP Blundeston|Lowestoft|Suffolk	NR32 5BG
+BK	BKI	Brockhill	HMP Brockhill		2008-06-25	HMP Brockhill|Hewell Lane|Redditch|Worcestershire	B97 6QS
+BU	BUI	Bullwood Hall	HMP Bullwood Hall		2013-03-28	HMP/YOI BULLWOOD HALL|High Road|Hockley	SS5 4TE
+CH	CHI	Camp Hill	HMP Camp Hill		2009-04	HMP Camp Hill|Newport|Isle of Wight	PO30 5PB
+CY	CYI	Canterbury	HMP Canterbury		2013-03-31	HMP Canterbury|46 Longport|Canterbury|Kent	CT1 1PJ
+CS	CSI	Castington	HMP Castington		2011-10-31	HMP/YOI CASTINGTON|Morpeth|Northumberland	NE65 9XG
+DR	DRI	Dorchester	HMP Dorchester		2013-12	HMP Dorchester|North Square|Dorchester|Dorset	DT1 1JD
+DV	DVI	Dover	HMIRC Dover		2015	The Citadel|Western Heights|Dover|Kent	CT17 9DR
+NE	NEI	Edmunds Hill	HMP Edmunds Hill		2011-04	Stradishall|Newmarket|Suffolk	CB8 9YN
+EV	EVI	Everthorpe	HMP Everthorpe		2014-04	HMP Everthorpe|Beck Road|Everthorpe Brough|East Yorkshire	HU15 1RB
+GL	GLI	Gloucester	HMP Gloucester		2013	HMP/YOI GLOUCESTER|Barrack Square|Gloucester	GL1 2JN
+HR	HRI	Haslar	HMIRC Haslar		2015	2 Dolphin Way|Gosport|Hampshire	PO12 2AW
+HG	HGI	Hewell Grange	HMP Hewell Grange		2008-06-25	HMP Hewell Grange, Redditch, Worcestershire	B97 6QQ
+HY	HYI	Holloway	HMP Holloway		2016-07	HMP/YOI HOLLOWAY|Parkhurst Road|London	N7 0NU
+PT	PTI	Kingston	HMP Kingston		2013-03-28	122 Milton Road|Portsmouth|Hampshire	PO3 6AS
+LM	LMI	Latchmere House	HMP Latchmere House		2011-09	Church Road|Ham Common|Richmond|Surrey	TW10 5HH
+LA	LAI	Lancaster	HMP Lancaster		2011	The Castle|LANCASTER|Lancashire	LA1 1YL
+NN	NNI	Northallerton	HMP Northallerton		2013-12	HMYOI NORTHALLERTON|15A East Road|Northallerton|North Yorkshire	DL6 1NW
+PK	PKI	Parkhurst	HMP Parkhurst		2009-04	Newport|Isle of Wight	PO30 5NX
+RD	RDI	Reading	HMP Reading		2013-11	HMP/YOI  READING|Forbury Road|Reading|Berkshire	RG1 3HY
+SM	SMI	Shepton Mallet	HMP Shepton Mallet		2013-02-28	Cornhill|Shepton Mallet|Somerset	BA4 5LU
+SY	SYI	Shrewsbury	HMP Shrewsbury		2013-03	The Dana|Shrewsbury|Shropshire	SY1 2HR
+WA	WAI	The Weare	HMP The Weare		2006	Rotherham Road|Castletown|Portland|Dorset	DT5 1PZ
+WB	WBI	Wellingborough	HMP Wellingborough		2012-12-21	Millers Park|Doddington Road|Wellingborough|Northamptonshire	NN8 2NH
+WO	WOI	Wolds	HMP Wolds		2014-04	Everthorpe|Brough|East Yorkshire	HU15 2JZ

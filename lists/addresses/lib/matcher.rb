@@ -7,6 +7,9 @@ module Matcher
     def score name, address_parts, postcode, address
       score = 0.0
       score += 1.3 if address.name.to_s.include?(name) || address.name_cy.to_s.include?(name)
+      if name == 'LANCASTER' && address.name.to_s.include?('LANCASTER FARMS')
+        score -= 5
+      end
       if name_include?('PRISON', address)
         score += 0.1
       else
@@ -17,6 +20,7 @@ module Matcher
         name_include?('VISITORS CENTRE', address) ||
         name_include?('PHARMACY', address) ||
         name_include?('BUS SHELTER', address) ||
+        name_include?('CAR PARK', address) ||
         name_include?('ELECTRICITY SUBSTATION', address)
         score -= 3.0
       end
@@ -151,8 +155,7 @@ module Matcher
       end
     end
 
-    def address_uprn prison, address_list
-      name = prison.prison
+    def address_uprn name, prison, address_list
       address_parts = prison.address_parts
       postcode = prison.postcode
       match = match_address(name, address_parts, postcode, address_list)
@@ -169,11 +172,11 @@ module Matcher
     def other_addresses other_location, address, prisons, addresses
       prison = prisons.detect{|x| x.prison == other_location}
       binding.pry if prison.nil?
-      [address, address_uprn(prison, addresses)]
+      [address, address_uprn(prison.prison, prison, addresses)]
     end
 
     def all_addresses prison, prisons, addresses, jointly_managed_prison_second_location
-      address = address_uprn(prison, addresses)
+      address = address_uprn(prison.prison, prison, addresses)
       case prison.prison
       when 'Usk/Prescoed (Usk)'
         other_addresses('Usk/Prescoed (Prescoed)', address, jointly_managed_prison_second_location, addresses).join(";")

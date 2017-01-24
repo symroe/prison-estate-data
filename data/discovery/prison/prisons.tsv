@@ -23,7 +23,6 @@ DA	Dartmoor	HMP Dartmoor		10001330266
 DT	Deerbolt	HMYOI Deerbolt		10070413833		
 DN	Doncaster	HMP/YOI Doncaster	company:00242246	100052207601		
 DG	Dovegate	HMP Dovegate	company:03471077	10008039764		
-DV	Dover			10034883299		2015
 DW	Downview	HMP/YOI Downview		68136669		
 DH	Drake Hall	HMP/YOI Drake Hall		10002088530		
 DM	Durham	HMP/YOI Durham		100110738556		
@@ -44,7 +43,6 @@ GT	Gartree	HMP Gartree		100030489952
 GP	Glen Parva	HMP/YOI Glen Parva		10010147357		
 GN	Grendon/Spring Hill	HMP Grendon/Spring Hill		766293688		
 GM	Guys Marsh	HMP Guys Marsh		10013217671		
-HR	Haslar			37032487		2015
 HD	Hatfield	HMP/YOI Hatfield		100050785306		
 HV	Haverigg	HMP Haverigg		100110755872		
 HE	Hewell	HMP Hewell		100121267009		
@@ -132,9 +130,11 @@ CH	Camp Hill	HMP Camp Hill				2009-04
 CY	Canterbury	HMP Canterbury				2013-03-31
 CS	Castinglon	HMP Castinglon				2011-10-31
 DR	Dorchester	HMP Dorchester				2013-12
+DV	Dover	HMIRC Dover				2015
 NE	Edmunds Hill	HMP Edmunds Hill				2011-04
 EV	Everthorpe	HMP Everthorpe				2014-04
 GL	Gloucester	HMP Gloucester				2013
+HR	Haslar	HMIRC Haslar				2015
 HG	Hewell Grange	HMP Hewell Grange				2008-06-25
 HY	Holloway	HMP Holloway				2016-07
 PT	Kingston	HMP Kingston				2013-03-28

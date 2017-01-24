@@ -15,6 +15,12 @@ module LoadData
       end
     end
 
+    def remove_closed_prisons prisons
+      prisons.reject do |prison|
+        ['Haslar Immigration Removal Centre','Dover Immigration Removal Centre'].include?(prison.prison)
+      end
+    end
+
     def laa_codes
       codes = Morph.from_tsv read('../../legal-aid-agency/prison-codes.tsv'), :code
       codes.each {|x| x.code = x.code[0..1]}
@@ -27,7 +33,8 @@ module LoadData
 
     def prison_finder_prisons
       prisons = Morph.from_tsv read('../../prison-finder/prison-address-text.tsv'), :prison
-      remove_jointly_managed(prisons)
+      prisons = remove_jointly_managed(prisons)
+      remove_closed_prisons(prisons)
     end
 
     def former_prisons

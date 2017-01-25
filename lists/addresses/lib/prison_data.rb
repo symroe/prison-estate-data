@@ -37,12 +37,14 @@ prisons.sort_by{|p| Matcher.massage_name(p.prison)}.each do |prison|
 end
 
 former_prisons.each do |prison|
+  address = Matcher.address_uprn(prison.name, prison, addresses)
+  code = prison.prison
   puts [
-    prison.prison,
+    code,
     prison.name,
     prison.official_name,
     nil,
-    nil,
+    address,
     nil,
     prison.end_date
   ].join("\t")

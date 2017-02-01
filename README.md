@@ -9,7 +9,7 @@ Home Office, sourced from
 and
 [National Probation Service](https://www.gov.uk/government/organisations/national-probation-service)'s
 list of
-[prisons and their resettlement providers](https://www.justice.gov.uk/contacts/prison-finder),
+[prisons and their resettlement providers](https://www.gov.uk/government/publications/prisons-and-their-resettlement-providers),
 and from
 [HM Prison Service](https://www.gov.uk/government/organisations/hm-prison-service)'s
 [prison finder service](https://www.justice.gov.uk/contacts/prison-finder) and

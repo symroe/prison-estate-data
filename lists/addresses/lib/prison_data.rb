@@ -27,8 +27,8 @@ prisons.sort_by{|p| Matcher.massage_name(p.prison)}.each do |prison|
   company_number = Matcher.company_number(short_name, contracted_out)
   puts [
     code,
-    short_name,
     official_name,
+    nil,
     company_number,
     address,
     nil,
@@ -41,8 +41,8 @@ former_prisons.each do |prison|
   code = prison.prison
   puts [
     code,
-    prison.name,
     prison.official_name,
+    nil,
     nil,
     address,
     nil,

@@ -22,13 +22,35 @@ module LoadData
     end
 
     def laa_codes
-      codes = Morph.from_tsv read('../../legal-aid-agency/prison-codes.tsv'), :code
+      codes = Morph.from_tsv read('../../legal-aid-agency/prison-codes.tsv'), :laa_code
       codes.each {|x| x.code = x.code[0..1]}
       codes
     end
 
+    def old_nomis_codes
+      Morph.from_tsv read('../../noms-codes/prison-codes.tsv'), :old_nomis
+    end
+
+    def current_nomis_codes
+      Morph.from_tsv read('../../nomis-codes/nomis-codes.tsv'), :nomis
+    end
+
+    def closed_nomis_codes old_nomis, nomis
+      current_codes = nomis.map(&:nomis)
+      closed_codes = old_nomis.select do |x|
+        x.nomis.size > 0 && !current_codes.include?(x.nomis)
+      end
+      closed_codes.map do |x|
+        Morph.from_hash nomis: { nomis: x.nomis, name: x.name.strip }
+      end
+    end
+
     def nomis_codes
-      Morph.from_tsv read('../../noms-codes/prison-codes.tsv'), :code
+      nomis = current_nomis_codes
+      nomis.each {|x| x.name = x.name.strip}
+      old_nomis = old_nomis_codes
+      closed_nomis_codes = closed_nomis_codes old_nomis, nomis
+      nomis + closed_nomis_codes
     end
 
     def prison_finder_prisons

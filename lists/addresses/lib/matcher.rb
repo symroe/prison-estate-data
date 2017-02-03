@@ -194,5 +194,20 @@ module Matcher
         address
       end
     end
+
+    def match_nomis_code(name, nomis_codes)
+      name = name.downcase
+      nomis_codes.detect do |n|
+        name.downcase == n.name.
+          sub(/^HMP /,'').
+          sub(' (HMP)','').
+          sub(' (HMP & YOI)','').
+          sub(' (HMPYOI)','').
+          sub(' (HMPYOI & RC)','').
+          sub(' HMP/YOI','').
+          downcase.
+          sub(' immigration removal centre','')
+      end.try(:nomis)
+    end
   end
 end

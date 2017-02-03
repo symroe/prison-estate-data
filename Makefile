@@ -1,5 +1,6 @@
 
-target: data/discovery/prison/prisons.tsv maps/address.tsv
+target: data/discovery/prison/prisons.tsv maps/address.tsv \
+	maps/contracted-out.tsv
 
 ../address-discovery-data-matching/maps/prison.tsv: Gemfile.lock
 	bundle exec ruby ./lists/addresses/lib/address_street_postcode_data_map.rb > $@
@@ -15,6 +16,9 @@ maps/address.tsv: ../address-discovery-data-matching/maps/prison.tsv
 	csvcut -tc address,prison,name,name_cy ../address-discovery-data-matching/maps/prison.tsv \
 	| csvformat -T \
 	> $@
+
+maps/contracted-out.tsv:
+	bundle exec ruby ./lists/addresses/lib/contracted_out_map.rb > $@
 
 Gemfile.lock:
 	bundle install

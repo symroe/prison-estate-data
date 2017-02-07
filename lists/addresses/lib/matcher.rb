@@ -162,6 +162,14 @@ module Matcher
       match[1] > 2.4 ? match[0].key : nil
     end
 
+    def contracted_code location, prisons, codes
+      prison = prisons.detect{|x| massage_name(short_name(x.prison)) == location}
+      if prison
+        short_name = short_name(prison.prison)
+        match_code(short_name, codes)
+      end
+    end
+
     def company_number name, contracted_out
       name = massage_name(name)
       company_number = contracted_out.detect{|x| x.location == name}.try(:company)
@@ -185,6 +193,21 @@ module Matcher
       else
         address
       end
+    end
+
+    def match_nomis_code(name, nomis_codes)
+      name = name.downcase
+      nomis_codes.detect do |n|
+        name.downcase == n.name.
+          sub(/^HMP /,'').
+          sub(' (HMP)','').
+          sub(' (HMP & YOI)','').
+          sub(' (HMPYOI)','').
+          sub(' (HMPYOI & RC)','').
+          sub(' HMP/YOI','').
+          downcase.
+          sub(' immigration removal centre','')
+      end.try(:nomis)
     end
   end
 end

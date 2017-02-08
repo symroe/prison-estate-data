@@ -1,5 +1,10 @@
 ---
+prison:
+  description: Prison in prison register
+  key: prison
 noms-spend-data:
   description: Prison name in NOMS spend data over £25,000 files
+  key: contracted-out
 nomis-code:
   description: NOMIS code and name (includes former prisons)
+  key: nomis

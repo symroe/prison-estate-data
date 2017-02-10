@@ -163,9 +163,9 @@ module Matcher
     end
 
     def contracted_code location, prisons, codes
-      prison = prisons.detect{|x| massage_name(short_name(x.prison)) == location}
+      prison = prisons.detect{|x| massage_name(short_name(x.name)) == location}
       if prison
-        short_name = short_name(prison.prison)
+        short_name = short_name(prison.name)
         match_code(short_name, codes)
       end
     end
@@ -178,14 +178,14 @@ module Matcher
     end
 
     def other_addresses other_location, address, prisons, addresses
-      prison = prisons.detect{|x| x.prison == other_location}
+      prison = prisons.detect{|x| x.name == other_location}
       binding.pry if prison.nil?
-      [address, address_uprn(prison.prison, prison, addresses)]
+      [address, address_uprn(prison.name, prison, addresses)]
     end
 
     def all_addresses prison, prisons, addresses, jointly_managed_prison_second_location
-      address = address_uprn(prison.prison, prison, addresses)
-      case prison.prison
+      address = address_uprn(prison.name, prison, addresses)
+      case prison.name
       when 'Usk/Prescoed (Usk)'
         other_addresses('Usk/Prescoed (Prescoed)', address, jointly_managed_prison_second_location, addresses).join(";")
       when 'Grendon'

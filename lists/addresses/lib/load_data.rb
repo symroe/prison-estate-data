@@ -11,13 +11,13 @@ module LoadData
 
     def remove_jointly_managed prisons
       prisons.reject do |prison|
-        ['Usk/Prescoed (Prescoed)','Spring Hill'].include?(prison.prison)
+        ['Usk/Prescoed (Prescoed)','Spring Hill'].include?(prison.name)
       end
     end
 
     def remove_closed_prisons prisons
       prisons.reject do |prison|
-        ['Haslar Immigration Removal Centre','Dover Immigration Removal Centre'].include?(prison.prison)
+        ['Haslar Immigration Removal Centre','Dover Immigration Removal Centre'].include?(prison.name)
       end
     end
 
@@ -66,7 +66,7 @@ module LoadData
     def jointly_managed_prison_second_location
       prisons = Morph.from_tsv read('../../prison-finder/prison-address-text.tsv'), :prison
       prisons.select do |prison|
-        ['Usk/Prescoed (Prescoed)','Spring Hill'].include?(prison.prison)
+        ['Usk/Prescoed (Prescoed)','Spring Hill'].include?(prison.name)
       end
     end
 

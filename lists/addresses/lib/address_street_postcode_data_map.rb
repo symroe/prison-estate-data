@@ -12,7 +12,7 @@ official_names = LoadData.prison_map_prisons ; nil
 
 puts (%w[prison prison-name prison-short-name address] + addresses.first.morph_attributes.keys).join("\t")
 prisons.each do |prison|
-  name = prison.prison
+  name = prison.name
   address = Matcher.address_uprn(name, prison, addresses)
   code = Matcher.match_code(name, codes)
   official_name = Matcher.match_official_name(name, official_names)

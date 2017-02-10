@@ -69,7 +69,7 @@ module Matcher
       name = case name
              # Announced June 2013 HM Prisons Everthorpe and Wolds
              # will merge into one larger prison under a new name HMP Humber.
-             when 'Medway'
+             when /Medway/
                return 'MW'
              when 'Humber'
                return 'HM'
@@ -205,6 +205,7 @@ module Matcher
           sub(' (HMP)','').
           sub(' (HMP & YOI)','').
           sub(' (HMPYOI)','').
+          sub(' (STC)','').
           sub(' (HMPYOI & RC)','').
           sub(' HMP/YOI','').
           downcase.

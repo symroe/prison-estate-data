@@ -9,7 +9,7 @@
 #
 
 prison_estate.tsv: prison_estate_and_cpas.csv
-	bundle exec ruby clean_up.rb > prison_estate.tsv
+	bundle exec ruby clean_up.rb | sed 's/^prison/name/' > prison_estate.tsv
 
 clean:
 	rm -f prison_estate.tsv

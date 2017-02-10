@@ -16,8 +16,8 @@ addresses = LoadData.addresses ; nil
 
 puts %w[prison name official-name organisation address start-date end-date].join("\t")
 
-prisons.sort_by{|p| Matcher.massage_name(p.prison)}.each do |prison|
-  name = prison.prison
+prisons.sort_by{|p| Matcher.massage_name(p.name)}.each do |prison|
+  name = prison.name
   address = Matcher.address_uprn(name, prison, addresses)
   official_name = Matcher.match_official_name(name, official_names)
   short_name = Matcher.short_name(name)
@@ -38,7 +38,7 @@ end
 
 former_prisons.each do |prison|
   address = Matcher.address_uprn(prison.name, prison, addresses)
-  code = prison.prison
+  code = prison.name
   puts [
     code,
     prison.official_name,

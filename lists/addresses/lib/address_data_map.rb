@@ -12,7 +12,7 @@ addresses = LoadData.addresses ; nil
 
 puts %w[prison address].join("\t")
 prisons.each do |prison|
-  name = prison.prison
+  name = prison.name
   address = Matcher.address_uprn(name, prison, addresses)
   all_addresses = Matcher.all_addresses(prison, prisons, addresses, jointly_managed_prison_second_location)
   code = Matcher.match_code(name, codes)

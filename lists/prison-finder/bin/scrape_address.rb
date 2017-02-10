@@ -37,10 +37,10 @@ def address_postcode name, doc
         map(&:strip).
         map{|w| w.chomp(",")}.
         map(&:strip).
-        delete_if do |w| 
+        delete_if do |w|
           opc = $pc
           $pc = w[/[0-9][A-Z][A-Z]/].to_s.size > 0 unless $pc
-          opc || w.size == 0 
+          opc || w.size == 0
         end
   end.first
   address = address.first.split(",") if address && address.size == 1
@@ -86,7 +86,7 @@ def ignore? name
   name == 'Usk'
 end
 
-puts "prison\taddress-text\tpostcode"
+puts "name\taddress-text\tpostcode"
 name_address_postcodes.
   reject{|name, a, p| ignore?(name)}.
   sort_by{|name, a, p| name}.

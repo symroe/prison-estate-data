@@ -14,7 +14,7 @@ official_names = LoadData.prison_map_prisons ; nil
 contracted_out = LoadData.contracted_out_prisons ; nil
 addresses = LoadData.addresses ; nil
 
-puts %w[prison name official-name organisation address start-date end-date].join("\t")
+puts %w[prison name organisation address start-date end-date].join("\t")
 
 prisons.sort_by{|p| Matcher.massage_name(p.name)}.each do |prison|
   name = prison.name
@@ -28,7 +28,6 @@ prisons.sort_by{|p| Matcher.massage_name(p.name)}.each do |prison|
   puts [
     code,
     official_name,
-    nil,
     company_number,
     address,
     nil,
@@ -42,7 +41,6 @@ former_prisons.each do |prison|
   puts [
     code,
     prison.official_name,
-    nil,
     nil,
     address,
     nil,

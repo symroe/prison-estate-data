@@ -53,10 +53,21 @@ module LoadData
       nomis + closed_nomis_codes
     end
 
+    def add_medway(prisons)
+      medway = Morph::Prison.new.tap do |p|
+        p.name = 'Medway'
+        p.address_text = 'Sir Evelyn Road|Rochester'
+        p.postcode = 'ME1 3LU'
+      end
+      prisons << medway
+      prisons
+    end
+
     def prison_finder_prisons
       prisons = Morph.from_tsv read('../../prison-finder/prison-address-text.tsv'), :prison
       prisons = remove_jointly_managed(prisons)
-      remove_closed_prisons(prisons)
+      prisons = remove_closed_prisons(prisons)
+      add_medway(prisons)
     end
 
     def former_prisons

@@ -38,7 +38,7 @@ end
 
 former_prisons.each do |prison|
   address = Matcher.address_uprn(prison.name, prison, addresses)
-  code = prison.name
+  code = prison.prison
   puts [
     code,
     prison.official_name,

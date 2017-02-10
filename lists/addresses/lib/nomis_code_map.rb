@@ -5,11 +5,17 @@ require_relative 'matcher'
 
 # convert ALTCOURSE (HMP) to HMP ALTCOURSE
 def rearrange_name name
-  if m = /^([^\(]+)\s+\(([^\)]+)\)$/.match(name)
+  if name == 'MEDWAY (STC)'
+    'Medway STC'
+  elsif m = /^([^\(]+)\s+\(([^\)]+)\)$/.match(name)
     [m[2], m[1].split.map(&:capitalize).join(' ') ].join(' ')
   else
     name.split.map(&:capitalize).join(' ')
   end
+end
+
+def nomis_code_match? nomis_code, prison, nomis_codes
+  nomis_code == Matcher.match_nomis_code(Matcher.short_name(prison.name), nomis_codes)
 end
 
 codes = LoadData.laa_codes ; nil
@@ -19,17 +25,17 @@ former_prisons = LoadData.former_prisons ; nil
 
 puts %w[nomis prison name nomis-name].join("\t")
 nomis_codes.each do |n|
-  prison = prisons.detect do |p|
-    n.nomis == Matcher.match_nomis_code(Matcher.short_name(p.name), nomis_codes)
+  nomis_code = n.nomis
+  prison = prisons.detect { |prison| nomis_code_match?(nomis_code, prison, nomis_codes) }
+  unless prison
+    prison = former_prisons.detect { |p| nomis_code_match?(nomis_code, p, nomis_codes) }
   end
-  prison = former_prisons.detect do |p|
-    n.nomis == Matcher.match_nomis_code(Matcher.short_name(p.name), nomis_codes)
-  end unless prison
+
   code = if prison
            short_name = Matcher.short_name(prison.name)
            Matcher.match_code(short_name, codes)
          else
            nil
          end
-  puts [n.nomis, code, rearrange_name(n.name), n.name].join("\t")
+  puts [nomis_code, code, rearrange_name(n.name), n.name].join("\t")
 end

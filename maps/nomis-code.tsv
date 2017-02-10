@@ -26,7 +26,7 @@ DHI	DH	DRAKE HALL (HMP & YOI)
 DMI	DM	DURHAM (HMP)
 DNI	DN	DONCASTER (HMP)
 DTI	DT	DEERBOLT (HMPYOI)
-DVI		Dover Immigration Removal Centre
+DVI	DV	Dover Immigration Removal Centre
 DWI	DW	DOWNVIEW (HMP)
 EEI	EE	ERLESTOKE (HMP)
 EHI	EH	STANDFORD HILL (HMP)
@@ -56,7 +56,7 @@ HLI	HL	HULL (HMP)
 HMI	HM	HUMBER (HMP)
 HOI	HO	HIGH DOWN (HMP)
 HPI	HP	HIGHPOINT (HMP)
-HRI		Haslar Immigration Removal Centre
+HRI	HR	Haslar Immigration Removal Centre
 HVI	HV	HAVERIGG (HMP)
 ISI	IS	ISIS HMP/YOI
 IWI	PK	ISLE OF WIGHT (HMP)
@@ -127,30 +127,30 @@ WSI	WS	WORMWOOD SCRUBS (HMP)
 WTI	WT	WHATTON (HMP)
 WWI	WW	WANDSWORTH (HMP)
 WYI	WY	WETHERBY (HMPYOI)
-AKI		Acklington
-ALI		Albany
-AWI		Ashwell
+AKI	AK	Acklington
+ALI	AL	Albany
+AWI	AW	Ashwell
 BTI		Blakenhurst
-BDI		Blundeston
+BDI	BD	Blundeston
 BKI		Brockhill
-BUI		Bullwood Hall
-CHI		Camp Hill
-CYI		Canterbury
+BUI	BU	Bullwood Hall
+CHI	CH	Camp Hill
+CYI	CY	Canterbury
 CSI		Castinglon
-DRI		Dorchester
-NEI		Edmunds Hill
-EVI		Everthorpe
-GLI		Gloucester
+DRI	DR	Dorchester
+NEI	NE	Edmunds Hill
+EVI	EV	Everthorpe
+GLI	GL	Gloucester
 HGI		Hewell Grange
-HYI		Holloway
-PTI		Kingston
-LMI		Latchmere House
+HYI	HY	Holloway
+PTI	PT	Kingston
+LMI	LM	Latchmere House
 LAI		Lancaster
-NNI		Northallerton
-PKI		Parkhurst
-RDI		Reading
-SMI		Shepton Mallet
-SYI		Shrewsbury
+NNI	NN	Northallerton
+PKI	PK	Parkhurst
+RDI	RD	Reading
+SMI	SM	Shepton Mallet
+SYI	SY	Shrewsbury
 WAI		The Weare
-WBI		Wellingborough
-WOI		Wolds
+WBI	WB	Wellingborough
+WOI	WO	Wolds

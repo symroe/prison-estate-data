@@ -4,7 +4,7 @@ module Matcher
       address.name.to_s.include?(text) || address.name_cy.to_s.include?(text)
     end
 
-    def score name, address_parts, postcode, address
+    def score name, address_parts, postcode, address, prison_end_date
       score = 0.0
       score += 1.3 if address.name.to_s.include?(name) || address.name_cy.to_s.include?(name)
       if name == 'LANCASTER' && address.name.to_s.include?('LANCASTER FARMS')
@@ -32,6 +32,9 @@ module Matcher
       address_parts.each do |part|
         score += 1.0 if address.address_parts.include?(part)
       end
+      if address.end_date.present? && !prison_end_date.present?
+        score -= 2
+      end
       if postcode.strip == address.postcode.strip
         score += 1.5
       else
@@ -40,13 +43,13 @@ module Matcher
       score
     end
 
-    def match_address name, address_parts, postcode, addresses
+    def match_address name, address_parts, postcode, addresses, prison_end_date
       name = name.sub('HMP and YOI ','').upcase
       address_parts = address_parts.map(&:upcase)
 
       match = [nil, 0.0]
       addresses.each do |address|
-        score = score(name, address_parts, postcode, address)
+        score = score(name, address_parts, postcode, address, prison_end_date)
         if match[0].nil? || score > match[1]
           match = [address, score]
         end
@@ -160,7 +163,7 @@ module Matcher
     def address_uprn name, prison, address_list
       address_parts = prison.address_parts
       postcode = prison.postcode
-      match = match_address(name, address_parts, postcode, address_list)
+      match = match_address(name, address_parts, postcode, address_list, prison.end_date)
       match[1] > 2.4 ? match[0].key : nil
     end
 

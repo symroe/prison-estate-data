@@ -6,7 +6,7 @@ target: data/discovery/prison/prisons.tsv maps/address.tsv \
 ../address-discovery-data-matching/maps/prison.tsv: Gemfile.lock
 	bundle exec ruby ./lists/addresses/lib/address_street_postcode_data_map.rb > $@
 
-../address-discovery-data/maps/prison.tsv: Gemfile.lock
+../address-discovery-data/maps/prison.tsv: ../address-discovery-data-matching/maps/prison.tsv
 	bundle exec ruby ./lists/addresses/lib/address_data_map.rb > $@
 
 data/discovery/prison/prisons.tsv: Gemfile.lock
@@ -29,4 +29,5 @@ Gemfile.lock:
 
 clean:
 	rm -f data/discovery/prison/prisons.tsv
+	rm -f ../address-discovery-data-matching/maps/prison.tsv
 	rm -f ../address-discovery-data/maps/prison.tsv

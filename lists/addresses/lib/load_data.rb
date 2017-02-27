@@ -15,9 +15,11 @@ module LoadData
       end
     end
 
-    def remove_closed_prisons prisons
+    def remove_closed_prisons prisons, former_prisons
+      former_names = former_prisons.map(&:name) +
+        ['Haslar Immigration Removal Centre', 'Dover Immigration Removal Centre']
       prisons.reject do |prison|
-        ['Haslar Immigration Removal Centre','Dover Immigration Removal Centre'].include?(prison.name)
+        former_names.include?(prison.name)
       end
     end
 
@@ -64,9 +66,10 @@ module LoadData
     end
 
     def prison_finder_prisons
+      former_prisons = former_prisons()
       prisons = Morph.from_tsv read('../../prison-finder/prison-address-text.tsv'), :prison
       prisons = remove_jointly_managed(prisons)
-      prisons = remove_closed_prisons(prisons)
+      prisons = remove_closed_prisons(prisons, former_prisons)
       add_medway(prisons)
     end
 

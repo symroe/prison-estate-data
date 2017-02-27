@@ -29,6 +29,10 @@ module LoadData
       codes
     end
 
+    def hmi_names
+      Morph.from_tsv read('../../hmi-prisons/prison.tsv'), :hmi
+    end
+
     def old_nomis_codes
       Morph.from_tsv read('../../noms-codes/prison-codes.tsv'), :old_nomis
     end

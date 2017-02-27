@@ -5,6 +5,9 @@ prison:
 nomis-code:
   description: NOMIS code and name (includes former prisons)
   key: nomis
+hmi:
+  description: HM Inspectorate of Prisons' report prison names
+  key: hmi
 contracted-out:
   description: Prison name in NOMS spend data over £25,000 files
   key: contracted-out

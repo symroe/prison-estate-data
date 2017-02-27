@@ -215,5 +215,16 @@ module Matcher
           sub(' immigration removal centre','')
       end.try(:nomis)
     end
+
+    def match_hmi_name(name, hmi_names)
+      name = name.downcase
+      hmi_names.detect do |n|
+        name.downcase == clean_name(n.name).
+          sub(/^HMP\/YOI /,'').
+          sub(/^HMYOI /,'').
+          downcase
+      end.try(:name)
+    end
+
   end
 end

@@ -24,6 +24,9 @@ maps/contracted-out.tsv:
 maps/nomis-code.tsv:
 	bundle exec ruby ./lists/addresses/lib/nomis_code_map.rb > $@
 
+maps/hmi.tsv:
+	bundle exec ruby ./lists/addresses/lib/hmi_map.rb > $@
+
 Gemfile.lock:
 	bundle install
 

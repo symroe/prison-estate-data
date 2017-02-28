@@ -2,6 +2,9 @@
 prison:
   description: Prison in prison register
   key: prison
+prison-map-prison:
+  description: Prison name from prison map PDF
+  key: prison-map-prison
 nomis-code:
   description: NOMIS code and name (includes former prisons)
   key: nomis

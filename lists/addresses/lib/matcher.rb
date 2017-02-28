@@ -85,7 +85,7 @@ module Matcher
              when 'Isis'
                return 'IS'
              when 'Isle of Wight'
-               'PARKHURST'
+               return 'IW'
              when 'Kirklevington Grange'
                'KIRKLEVINGTON'
              when 'Manchester (Strangeways)'

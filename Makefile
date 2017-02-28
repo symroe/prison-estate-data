@@ -27,6 +27,9 @@ maps/nomis-code.tsv:
 maps/hmi.tsv:
 	bundle exec ruby ./lists/addresses/lib/hmi_map.rb > $@
 
+maps/prison-map-prison.tsv:
+	bundle exec ruby ./lists/addresses/lib/prison_finder_map.rb > $@
+
 Gemfile.lock:
 	bundle install
 

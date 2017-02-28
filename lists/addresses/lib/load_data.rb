@@ -33,6 +33,10 @@ module LoadData
       Morph.from_tsv read('../../hmi-prisons/prison.tsv'), :hmi
     end
 
+    def prison_estate
+      Morph.from_tsv read('../../prison-estate/prison_estate.tsv'), :estate
+    end
+
     def old_nomis_codes
       Morph.from_tsv read('../../noms-codes/prison-codes.tsv'), :old_nomis
     end

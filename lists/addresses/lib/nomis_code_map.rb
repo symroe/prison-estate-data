@@ -8,7 +8,8 @@ def rearrange_name name
   if name == 'MEDWAY (STC)'
     'Medway STC'
   elsif m = /^([^\(]+)\s+\(([^\)]+)\)$/.match(name)
-    [m[2], m[1].split.map(&:capitalize).join(' ') ].join(' ')
+    prefix = m[2].sub('HMP & YOI', 'HMP/YOI')
+    [prefix, m[1].split.map(&:capitalize).join(' ') ].join(' ')
   else
     name.split.map(&:capitalize).join(' ')
   end

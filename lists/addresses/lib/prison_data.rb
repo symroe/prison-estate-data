@@ -13,11 +13,30 @@ jointly_managed_prison_second_location = LoadData.jointly_managed_prison_second_
 official_names = LoadData.prison_map_prisons ; nil
 contracted_out = LoadData.contracted_out_prisons ; nil
 addresses = LoadData.addresses ; nil
+prison_estate = LoadData.prison_estate ; nil
 
 puts %w[prison name organisation address start-date end-date].join("\t")
 
+def estate_name_match? estate_name, prison_name
+  name = case prison_name
+  when 'Grendon'
+    'Grendon/ Spring Hill'
+  when 'The Mount'
+    'Mount, The'
+  when 'Verne'
+    'Verne, The'
+  when 'Usk/Prescoed (Usk)'
+    'Usk/Prescoed'
+  else
+    prison_name
+  end
+
+  estate_name.gsub(' ','') == Matcher.short_name(name).gsub(' ','')
+end
+
 prisons.sort_by{|p| Matcher.massage_name(p.name)}.each do |prison|
   name = prison.name
+  estate_prison = prison_estate.detect { |estate| estate_name_match?(estate.name, name) }
   address = Matcher.address_uprn(name, prison, addresses)
   official_name = Matcher.match_official_name(name, official_names)
   short_name = Matcher.short_name(name)
@@ -27,7 +46,7 @@ prisons.sort_by{|p| Matcher.massage_name(p.name)}.each do |prison|
   company_number = Matcher.company_number(short_name, contracted_out)
   puts [
     code,
-    official_name,
+    WriteData.estate_name(estate_prison),
     company_number,
     address,
     nil,

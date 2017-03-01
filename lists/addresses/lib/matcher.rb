@@ -65,7 +65,11 @@ module Matcher
       name.sub('HMP and YOI ','').
         sub(' Immigration Removal Centre','').
         sub(' Young Offender Institution information','').
-        sub('HMP ','')
+        sub('HMP ','').
+        sub('HMP/YOI ','').
+        sub('HMYOI ','').
+        sub('HMIRC ','').
+        sub(' STC','')
     end
 
     def match_code name, codes
@@ -76,6 +80,8 @@ module Matcher
                return 'MW'
              when 'Humber'
                return 'HM'
+             when /Berwyn/
+               return "BW"
              when 'Hatfield'
                'MOORLAND (OPEN)'
              when 'Highpoint'

@@ -10,7 +10,7 @@ module WriteData
         when 'Young Offender Institution'
           'HMYOI'
         when 'Not in use'
-          'n/a'
+          nil
         when 'Secure Training Centre'
           nil
         when 'Immigration Removal Centre'

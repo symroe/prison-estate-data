@@ -63,14 +63,6 @@ former_prisons.each do |prison|
     nil,
     address,
     nil,
-    nil
-  ].join("\t")
-  puts [
-    code,
-    Matcher.short_name(prison.official_name),
-    nil,
-    address,
-    nil,
     prison.end_date
   ].join("\t")
 end

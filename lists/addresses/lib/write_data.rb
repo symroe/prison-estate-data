@@ -10,7 +10,11 @@ module WriteData
         when 'Young Offender Institution'
           'HMYOI'
         when 'Not in use'
-          nil
+          if estate.name[/Blantyre House/]
+            'HMP'
+          else
+            '???'
+          end
         when 'Secure Training Centre'
           nil
         when 'Immigration Removal Centre'

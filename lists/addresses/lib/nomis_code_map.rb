@@ -24,7 +24,7 @@ nomis_codes = LoadData.nomis_codes ; nil
 prisons = LoadData.prison_finder_prisons ; nil
 former_prisons = LoadData.former_prisons ; nil
 
-prisons = Morph.from_tsv LoadData.read('../../../data/discovery/prison/prisons.tsv'), :data
+prisons = Morph.from_tsv LoadData.read('../../../data/prison/prison.tsv'), :data
 
 puts %w[nomis prison name nomis-name].join("\t")
 nomis_codes.each do |n|

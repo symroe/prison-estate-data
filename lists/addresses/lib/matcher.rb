@@ -76,6 +76,8 @@ module Matcher
                return 'MW'
              when 'Humber'
                return 'HM'
+             when /Berwyn/
+               return "BW"
              when 'Hatfield'
                'MOORLAND (OPEN)'
              when 'Highpoint'

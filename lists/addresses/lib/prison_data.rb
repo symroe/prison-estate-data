@@ -34,6 +34,30 @@ def estate_name_match? estate_name, prison_name
   estate_name.gsub(' ','') == Matcher.short_name(name).gsub(' ','')
 end
 
+def write_morton_hall_history address
+  puts [
+    'MH',
+    'HMP Morton Hall',
+    nil,
+    address,
+    nil,
+    nil,
+    nil
+  ].join("\t")
+end
+
+def write_the_verne_history address
+  puts [
+    'VE',
+    'HMP The Verne',
+    nil,
+    address,
+    nil,
+    nil,
+    nil
+  ].join("\t")
+end
+
 prisons.sort_by{|p| Matcher.massage_name(p.name)}.each do |prison|
   name = prison.name
   estate_prison = prison_estate.detect { |estate| estate_name_match?(estate.name, name) }
@@ -45,7 +69,16 @@ prisons.sort_by{|p| Matcher.massage_name(p.name)}.each do |prison|
   binding.pry if code.blank?
   company_number = Matcher.company_number(short_name, contracted_out)
 
-  change_date = nil
+  case code
+  when 'MH'
+    write_morton_hall_history address
+    change_date = '2011-05'
+  when 'VE'
+    write_the_verne_history address
+    change_date = '2014-05'
+  else
+    change_date = nil
+  end
 
   puts [
     code,

@@ -15,7 +15,7 @@ contracted_out = LoadData.contracted_out_prisons ; nil
 addresses = LoadData.addresses ; nil
 prison_estate = LoadData.prison_estate ; nil
 
-puts %w[prison name organisation address start-date end-date].join("\t")
+puts %w[prison name operator address start-date end-date].join("\t")
 
 def estate_name_match? estate_name, prison_name
   name = case prison_name

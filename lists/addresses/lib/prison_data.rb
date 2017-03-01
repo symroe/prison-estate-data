@@ -15,7 +15,7 @@ contracted_out = LoadData.contracted_out_prisons ; nil
 addresses = LoadData.addresses ; nil
 prison_estate = LoadData.prison_estate ; nil
 
-puts %w[prison name operator address start-date end-date].join("\t")
+puts %w[prison name operator address change-date start-date end-date].join("\t")
 
 def estate_name_match? estate_name, prison_name
   name = case prison_name
@@ -34,6 +34,30 @@ def estate_name_match? estate_name, prison_name
   estate_name.gsub(' ','') == Matcher.short_name(name).gsub(' ','')
 end
 
+def write_morton_hall_history address
+  puts [
+    'MH',
+    'HMP Morton Hall',
+    nil,
+    address,
+    nil,
+    nil,
+    nil
+  ].join("\t")
+end
+
+def write_the_verne_history address
+  puts [
+    'VE',
+    'HMP The Verne',
+    nil,
+    address,
+    nil,
+    nil,
+    nil
+  ].join("\t")
+end
+
 prisons.sort_by{|p| Matcher.massage_name(p.name)}.each do |prison|
   name = prison.name
   estate_prison = prison_estate.detect { |estate| estate_name_match?(estate.name, name) }
@@ -44,11 +68,24 @@ prisons.sort_by{|p| Matcher.massage_name(p.name)}.each do |prison|
   code = Matcher.match_code(short_name, codes)
   binding.pry if code.blank?
   company_number = Matcher.company_number(short_name, contracted_out)
+
+  case code
+  when 'MH'
+    write_morton_hall_history address
+    change_date = '2011-05'
+  when 'VE'
+    write_the_verne_history address
+    change_date = '2014-05'
+  else
+    change_date = nil
+  end
+
   puts [
     code,
     WriteData.estate_name(estate_prison),
     company_number,
     address,
+    change_date,
     nil,
     end_date
   ].join("\t")
@@ -63,8 +100,9 @@ former_prisons.each do |prison|
     nil,
     address,
     nil,
+    nil,
     prison.end_date
   ].join("\t")
 end
 
-puts ["BW","HMP Berwyn",nil,nil,"2017-02",nil].join("\t") # add new prison
+puts ["BW","HMP Berwyn",nil,nil,nil,"2017-02",nil].join("\t") # add new prison

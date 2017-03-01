@@ -105,4 +105,4 @@ former_prisons.each do |prison|
   ].join("\t")
 end
 
-puts ["BW","HMP Berwyn",nil,nil,"2017-02",nil].join("\t") # add new prison
+puts ["BW","HMP Berwyn",nil,nil,nil,"2017-02",nil].join("\t") # add new prison

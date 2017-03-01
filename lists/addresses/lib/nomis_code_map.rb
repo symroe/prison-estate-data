@@ -24,17 +24,15 @@ nomis_codes = LoadData.nomis_codes ; nil
 prisons = LoadData.prison_finder_prisons ; nil
 former_prisons = LoadData.former_prisons ; nil
 
+prisons = Morph.from_tsv LoadData.read('../../../data/discovery/prison/prisons.tsv'), :data
+
 puts %w[nomis prison name nomis-name].join("\t")
 nomis_codes.each do |n|
   nomis_code = n.nomis
   prison = prisons.detect { |prison| nomis_code_match?(nomis_code, prison, nomis_codes) }
-  unless prison
-    prison = former_prisons.detect { |p| nomis_code_match?(nomis_code, p, nomis_codes) }
-  end
 
   code = if prison
-           short_name = Matcher.short_name(prison.name)
-           Matcher.match_code(short_name, codes)
+           prison.prison
          else
            nil
          end

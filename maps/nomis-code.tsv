@@ -12,7 +12,7 @@ BMI	BM	HMP Birmingham	BIRMINGHAM (HMP)
 BNI	BN	HMP Bullingdon	BULLINGDON (HMP)
 BRI	BR	HMP Bure	BURE (HMP)
 BSI	BS	HMP Brinsford	BRINSFORD (HMP)
-BWI		HMP Berwyn	BERWYN (HMP)
+BWI	BW	HMP Berwyn	BERWYN (HMP)
 BXI	BX	HMP Brixton	BRIXTON (HMP)
 BZI	BZ	HMP Bronzefield	BRONZEFIELD (HMP)
 CDI	CD	HMP Chelmsford	CHELMSFORD (HMP)
@@ -130,9 +130,9 @@ WYI	WY	HMPYOI Wetherby	WETHERBY (HMPYOI)
 AKI	AK	Acklington	Acklington
 ALI	AL	Albany	Albany
 AWI	AW	Ashwell	Ashwell
-BTI		Blakenhurst	Blakenhurst
+BTI	BT	Blakenhurst	Blakenhurst
 BDI	BD	Blundeston	Blundeston
-BKI		Brockhill	Brockhill
+BKI	BK	Brockhill	Brockhill
 BUI	BU	Bullwood Hall	Bullwood Hall
 CHI	CH	Camp Hill	Camp Hill
 CYI	CY	Canterbury	Canterbury
@@ -141,16 +141,16 @@ DRI	DR	Dorchester	Dorchester
 NEI	NE	Edmunds Hill	Edmunds Hill
 EVI	EV	Everthorpe	Everthorpe
 GLI	GL	Gloucester	Gloucester
-HGI		Hewell Grange	Hewell Grange
+HGI	HG	Hewell Grange	Hewell Grange
 HYI	HY	Holloway	Holloway
 PTI	PT	Kingston	Kingston
 LMI	LM	Latchmere House	Latchmere House
-LAI		Lancaster	Lancaster
+LAI	LA	Lancaster	Lancaster
 NNI	NN	Northallerton	Northallerton
 PKI	PK	Parkhurst	Parkhurst
 RDI	RD	Reading	Reading
 SMI	SM	Shepton Mallet	Shepton Mallet
 SYI	SY	Shrewsbury	Shrewsbury
-WAI		The Weare	The Weare
+WAI	WA	The Weare	The Weare
 WBI	WB	Wellingborough	Wellingborough
 WOI	WO	Wolds	Wolds

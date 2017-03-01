@@ -1,5 +1,5 @@
 
-target: data/discovery/prison/prisons.tsv maps/address.tsv \
+target: data/prison/prison.tsv maps/address.tsv \
 	maps/contracted-out.tsv \
 	maps/nomis-code.tsv
 
@@ -9,7 +9,7 @@ target: data/discovery/prison/prisons.tsv maps/address.tsv \
 ../address-discovery-data/maps/prison.tsv: ../address-discovery-data-matching/maps/prison.tsv
 	bundle exec ruby ./lists/addresses/lib/address_data_map.rb > $@
 
-data/discovery/prison/prisons.tsv: Gemfile.lock
+data/prison/prison.tsv: Gemfile.lock
 	bundle exec ruby ./lists/addresses/lib/prison_data.rb > $@
 
 maps/address.tsv: ../address-discovery-data-matching/maps/prison.tsv
@@ -34,6 +34,6 @@ Gemfile.lock:
 	bundle install
 
 clean:
-	rm -f data/discovery/prison/prisons.tsv
+	rm -f data/prison/prison.tsv
 	rm -f ../address-discovery-data-matching/maps/prison.tsv
 	rm -f ../address-discovery-data/maps/prison.tsv

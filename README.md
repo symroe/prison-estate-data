@@ -17,7 +17,7 @@ and from
 
 # Data
 
-## [prison](data/discovery/prison/prisons.tsv)
+## [prison](data/prison/prison.tsv)
 
 # Licence
 

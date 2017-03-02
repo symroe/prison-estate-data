@@ -1,7 +1,6 @@
 
 target: data/prison/prison.tsv maps/address.tsv \
 	maps/contracted-out.tsv \
-	lists/prison-estate/list.tsv \
 	maps/nomis-code.tsv
 
 lists/prison-estate/list.tsv: maps/prison-estate.tsv maps/designation-to-name-affix.tsv
@@ -34,8 +33,8 @@ maps/designation-to-name-affix.tsv:
 ../address-discovery-data/maps/prison.tsv: ../address-discovery-data-matching/maps/prison.tsv
 	bundle exec ruby ./lists/addresses/lib/address_data_map.rb > $@
 
-data/prison/prison.tsv: Gemfile.lock
-	bundle exec ruby ./lists/addresses/lib/prison_data.rb > $@
+data/prison/prison.tsv: Gemfile.lock lists/prison-estate/list.tsv
+	bundle exec ruby ./lib/prison_data.rb > $@
 
 maps/address.tsv: ../address-discovery-data-matching/maps/prison.tsv
 	mkdir -p maps

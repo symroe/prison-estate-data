@@ -1,0 +1,121 @@
+prison	prefix	name	suffix	designation
+AC	HMP/YOI	Altcourse		Dual Designated Prison
+AS	HMP	Ashfield		Prison
+AG	HMP/YOI	Askham Grange		Dual Designated Prison
+AY	HMYOI	Aylesbury		Young Offender Institution
+BF	HMP/YOI	Bedford		Dual Designated Prison
+BA	HMP/YOI	Belmarsh		Dual Designated Prison
+BM	HMP	Birmingham		Prison
+BH	???	Blantyre House		Not in use
+BS	HMP/YOI	Brinsford		Dual Designated Prison
+BL	HMP/YOI	Bristol		Dual Designated Prison
+BX	HMP	Brixton		Prison
+BZ	HMP/YOI	Bronzefield		Dual Designated Prison
+BC	HMP	Buckley Hall		Prison
+BN	HMP/YOI	Bullingdon		Dual Designated Prison
+BR	HMP	Bure		Prison
+CF	HMP/YOI	Cardiff		Dual Designated Prison
+CW	HMP	Channings Wood		Prison
+CD	HMP/YOI	Chelmsford		Dual Designated Prison
+CL	HMP	Coldingley		Prison
+CK	HMYOI	Cookham Wood		Young Offender Institution
+DA	HMP	Dartmoor		Prison
+DT	HMYOI	Deerbolt		Young Offender Institution
+DN	HMP/YOI	Doncaster		Dual Designated Prison
+DG	HMP	Dovegate		Prison
+DW	HMP/YOI	Downview		Dual Designated Prison
+DH	HMP/YOI	Drake Hall		Dual Designated Prison
+DM	HMP/YOI	Durham		Dual Designated Prison
+ES	HMP/YOI	East Sutton Park		Dual Designated Prison
+EW	HMP/YOI	Eastwood Park		Dual Designated Prison
+EY	HMP/YOI	Elmley		Dual Designated Prison
+EE	HMP	Erlestoke		Prison
+EX	HMP/YOI	Exeter		Dual Designated Prison
+FS	HMP	Featherstone		Prison
+FM	HMYOI	Feltham		Young Offender Institution
+FD	HMP	Ford		Prison
+FB	HMP/YOI	Forest Bank		Dual Designated Prison
+FH	HMP/YOI	Foston Hall		Dual Designated Prison
+FK	HMP	Frankland		Prison
+FN	HMP	Full Sutton		Prison
+GH	HMP	Garth		Prison
+GT	HMP	Gartree		Prison
+GP	HMP/YOI	Glen Parva		Dual Designated Prison
+GN	HMP	Grendon/ Spring Hill		Prison
+GM	HMP	Guys Marsh		Prison
+HD	HMP/YOI	Hatfield		Dual Designated Prison
+HV	HMP	Haverigg		Prison
+HE	HMP/YOI	Hewell		Dual Designated Prison
+HO	HMP/YOI	High Down		Dual Designated Prison
+HP	HMP	Highpoint		Prison
+HI	HMP/YOI	Hindley		Dual Designated Prison
+HB	HMP/YOI	Hollesley Bay		Dual Designated Prison
+HH	HMP/YOI	Holme House		Dual Designated Prison
+HL	HMP/YOI	Hull		Dual Designated Prison
+HM	HMP	Humber		Prison
+HC	HMP	Huntercombe		Prison
+IS	HMP/YOI	Isis		Dual Designated Prison
+IW	HMP/YOI	Isle of Wight		Dual Designated Prison
+KM	HMP	Kirkham		Prison
+KV	HMP/YOI	Kirklevington Grange		Dual Designated Prison
+LF	HMP	Lancaster Farms		Prison
+LE	HMP	Leeds		Prison
+LC	HMP	Leicester		Prison
+LW	HMP/YOI	Lewes		Dual Designated Prison
+LY	HMP	Leyhill		Prison
+LI	HMP/YOI	Lincoln		Dual Designated Prison
+LH	HMP	Lindholme		Prison
+LT	HMP	Littlehey		Prison
+LP	HMP	Liverpool		Prison
+LL	HMP	Long Lartin		Prison
+LN	HMP/YOI	Low Newton		Dual Designated Prison
+LG	HMP	Lowdham Grange		Prison
+MS	HMP	Maidstone		Prison
+MR	HMP/YOI	Manchester		Dual Designated Prison
+MW		Medway	STC	Secure Training Centre
+MD	HMP/YOI	Moorland		Dual Designated Prison
+MH	HMIRC	Morton Hall		Immigration Removal Centre
+MT	HMP	Mount, The		Prison
+NH	HMP/YOI	New Hall		Dual Designated Prison
+NS	HMP	North Sea Camp		Prison
+NL	HMP	Northumberland		Prison
+NW	HMP/YOI	Norwich		Dual Designated Prison
+NM	HMP/YOI	Nottingham		Dual Designated Prison
+OW	HMP	Oakwood		Prison
+ON	HMP	Onley		Prison
+PR	HMP/YOI	Parc		Dual Designated Prison
+PV	HMP/YOI	Pentonville		Dual Designated Prison
+PB	HMP/YOI	Peterborough		Dual Designated Prison
+PD	HMP/YOI	Portland		Dual Designated Prison
+PN	HMP/YOI	Preston		Dual Designated Prison
+RN	HMP	Ranby		Prison
+RS	HMP	Risley		Prison
+RC	HMP/YOI	Rochester		Dual Designated Prison
+RH	HMP	Rye Hill		Prison
+SD	HMP/YOI	Send		Dual Designated Prison
+SF	HMP	Stafford		Prison
+EH	HMP/YOI	Standford Hill		Dual Designated Prison
+SK	HMP	Stocken		Prison
+SH	HMP/YOI	Stoke Heath		Dual Designated Prison
+ST	HMP/YOI	Styal		Dual Designated Prison
+SU	HMP/YOI	Sudbury		Dual Designated Prison
+SL	HMP	Swaleside		Prison
+SW	HMP/YOI	Swansea		Dual Designated Prison
+SN	HMP/YOI	Swinfen Hall		Dual Designated Prison
+TS	HMP/YOI	Thameside		Dual Designated Prison
+TC	HMP/YOI	Thorn Cross		Dual Designated Prison
+UK	HMP/YOI	Usk / Prescoed		Dual Designated Prison
+VE	HMIRC	Verne, The		Immigration Removal Centre
+WD	HMP	Wakefield		Prison
+WW	HMP/YOI	Wandsworth		Dual Designated Prison
+WI	HMP/YOI	Warren Hill		Dual Designated Prison
+WL	HMP	Wayland		Prison
+WE	HMP	Wealstun		Prison
+WN	HMYOI	Werrington		Young Offender Institution
+WY	HMYOI	Wetherby		Young Offender Institution
+WT	HMP	Whatton		Prison
+WR	HMP	Whitemoor		Prison
+WC	HMP/YOI	Winchester		Dual Designated Prison
+WH	HMP/YOI	Woodhill		Dual Designated Prison
+WS	HMP/YOI	Wormwood Scrubs		Dual Designated Prison
+WM	HMP/YOI	Wymott		Dual Designated Prison

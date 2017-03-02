@@ -1,0 +1,122 @@
+prison	prefix	name	suffix	designation	operator
+AC	HMP/YOI	Altcourse		Dual Designated Prison	G4S
+AS	HMP	Ashfield		Prison	Serco
+AG	HMP/YOI	Askham Grange		Dual Designated Prison	PSP
+AY	HMYOI	Aylesbury		Young Offender Institution	PSP
+BF	HMP/YOI	Bedford		Dual Designated Prison	PSP
+BA	HMP/YOI	Belmarsh		Dual Designated Prison	PSP
+BW	HMP/YOI	Berwyn		Dual Designated Prison	PSP
+BM	HMP	Birmingham		Prison	G4S
+BH	???	Blantyre House		Not in use	PSP
+BS	HMP/YOI	Brinsford		Dual Designated Prison	PSP
+BL	HMP/YOI	Bristol		Dual Designated Prison	PSP
+BX	HMP	Brixton		Prison	PSP
+BZ	HMP/YOI	Bronzefield		Dual Designated Prison	Sodexo
+BC	HMP	Buckley Hall		Prison	PSP
+BN	HMP/YOI	Bullingdon		Dual Designated Prison	PSP
+BR	HMP	Bure		Prison	PSP
+CF	HMP/YOI	Cardiff		Dual Designated Prison	PSP
+CW	HMP	Channings Wood		Prison	PSP
+CD	HMP/YOI	Chelmsford		Dual Designated Prison	PSP
+CL	HMP	Coldingley		Prison	PSP
+CK	HMYOI	Cookham Wood		Young Offender Institution	PSP
+DA	HMP	Dartmoor		Prison	PSP
+DT	HMYOI	Deerbolt		Young Offender Institution	PSP
+DN	HMP/YOI	Doncaster		Dual Designated Prison	Serco
+DG	HMP	Dovegate		Prison	Serco
+DW	HMP/YOI	Downview		Dual Designated Prison	PSP
+DH	HMP/YOI	Drake Hall		Dual Designated Prison	PSP
+DM	HMP/YOI	Durham		Dual Designated Prison	PSP
+ES	HMP/YOI	East Sutton Park		Dual Designated Prison	PSP
+EW	HMP/YOI	Eastwood Park		Dual Designated Prison	PSP
+EY	HMP/YOI	Elmley		Dual Designated Prison	PSP
+EE	HMP	Erlestoke		Prison	PSP
+EX	HMP/YOI	Exeter		Dual Designated Prison	PSP
+FS	HMP	Featherstone		Prison	PSP
+FM	HMYOI	Feltham		Young Offender Institution	PSP
+FD	HMP	Ford		Prison	PSP
+FB	HMP/YOI	Forest Bank		Dual Designated Prison	Sodexo
+FH	HMP/YOI	Foston Hall		Dual Designated Prison	PSP
+FK	HMP	Frankland		Prison	PSP
+FN	HMP	Full Sutton		Prison	PSP
+GH	HMP	Garth		Prison	PSP
+GT	HMP	Gartree		Prison	PSP
+GP	HMP/YOI	Glen Parva		Dual Designated Prison	PSP
+GN	HMP	Grendon/ Spring Hill		Prison	PSP
+GM	HMP	Guys Marsh		Prison	PSP
+HD	HMP/YOI	Hatfield		Dual Designated Prison	PSP
+HV	HMP	Haverigg		Prison	PSP
+HE	HMP/YOI	Hewell		Dual Designated Prison	PSP
+HO	HMP/YOI	High Down		Dual Designated Prison	PSP
+HP	HMP	Highpoint		Prison	PSP
+HI	HMP/YOI	Hindley		Dual Designated Prison	PSP
+HB	HMP/YOI	Hollesley Bay		Dual Designated Prison	PSP
+HH	HMP/YOI	Holme House		Dual Designated Prison	PSP
+HL	HMP/YOI	Hull		Dual Designated Prison	PSP
+HM	HMP	Humber		Prison	PSP
+HC	HMP	Huntercombe		Prison	PSP
+IS	HMP/YOI	Isis		Dual Designated Prison	PSP
+IW	HMP/YOI	Isle of Wight		Dual Designated Prison	PSP
+KM	HMP	Kirkham		Prison	PSP
+KV	HMP/YOI	Kirklevington Grange		Dual Designated Prison	PSP
+LF	HMP	Lancaster Farms		Prison	PSP
+LE	HMP	Leeds		Prison	PSP
+LC	HMP	Leicester		Prison	PSP
+LW	HMP/YOI	Lewes		Dual Designated Prison	PSP
+LY	HMP	Leyhill		Prison	PSP
+LI	HMP/YOI	Lincoln		Dual Designated Prison	PSP
+LH	HMP	Lindholme		Prison	PSP
+LT	HMP	Littlehey		Prison	PSP
+LP	HMP	Liverpool		Prison	PSP
+LL	HMP	Long Lartin		Prison	PSP
+LN	HMP/YOI	Low Newton		Dual Designated Prison	PSP
+LG	HMP	Lowdham Grange		Prison	Serco
+MS	HMP	Maidstone		Prison	PSP
+MR	HMP/YOI	Manchester		Dual Designated Prison	PSP
+MW		Medway	STC	Secure Training Centre	PSP
+MD	HMP/YOI	Moorland		Dual Designated Prison	PSP
+MH	HMIRC	Morton Hall		Immigration Removal Centre	PSP
+MT	HMP	Mount, The		Prison	PSP
+NH	HMP/YOI	New Hall		Dual Designated Prison	PSP
+NS	HMP	North Sea Camp		Prison	PSP
+NL	HMP	Northumberland		Prison	Sodexo
+NW	HMP/YOI	Norwich		Dual Designated Prison	PSP
+NM	HMP/YOI	Nottingham		Dual Designated Prison	PSP
+OW	HMP	Oakwood		Prison	G4S
+ON	HMP	Onley		Prison	PSP
+PR	HMP/YOI	Parc		Dual Designated Prison	G4S
+PV	HMP/YOI	Pentonville		Dual Designated Prison	PSP
+PB	HMP/YOI	Peterborough		Dual Designated Prison	Sodexo
+PD	HMP/YOI	Portland		Dual Designated Prison	PSP
+PN	HMP/YOI	Preston		Dual Designated Prison	PSP
+RN	HMP	Ranby		Prison	PSP
+RS	HMP	Risley		Prison	PSP
+RC	HMP/YOI	Rochester		Dual Designated Prison	PSP
+RH	HMP	Rye Hill		Prison	G4S
+SD	HMP/YOI	Send		Dual Designated Prison	PSP
+SF	HMP	Stafford		Prison	PSP
+EH	HMP/YOI	Standford Hill		Dual Designated Prison	PSP
+SK	HMP	Stocken		Prison	PSP
+SH	HMP/YOI	Stoke Heath		Dual Designated Prison	PSP
+ST	HMP/YOI	Styal		Dual Designated Prison	PSP
+SU	HMP/YOI	Sudbury		Dual Designated Prison	PSP
+SL	HMP	Swaleside		Prison	PSP
+SW	HMP/YOI	Swansea		Dual Designated Prison	PSP
+SN	HMP/YOI	Swinfen Hall		Dual Designated Prison	PSP
+TS	HMP/YOI	Thameside		Dual Designated Prison	Serco
+TC	HMP/YOI	Thorn Cross		Dual Designated Prison	PSP
+UK	HMP/YOI	Usk / Prescoed		Dual Designated Prison	PSP
+VE	HMIRC	Verne, The		Immigration Removal Centre	PSP
+WD	HMP	Wakefield		Prison	PSP
+WW	HMP/YOI	Wandsworth		Dual Designated Prison	PSP
+WI	HMP/YOI	Warren Hill		Dual Designated Prison	PSP
+WL	HMP	Wayland		Prison	PSP
+WE	HMP	Wealstun		Prison	PSP
+WN	HMYOI	Werrington		Young Offender Institution	PSP
+WY	HMYOI	Wetherby		Young Offender Institution	PSP
+WT	HMP	Whatton		Prison	PSP
+WR	HMP	Whitemoor		Prison	PSP
+WC	HMP/YOI	Winchester		Dual Designated Prison	PSP
+WH	HMP/YOI	Woodhill		Dual Designated Prison	PSP
+WS	HMP/YOI	Wormwood Scrubs		Dual Designated Prison	PSP
+WM	HMP/YOI	Wymott		Dual Designated Prison	PSP

@@ -3,14 +3,39 @@ target: data/prison/prison.tsv maps/address.tsv \
 	maps/contracted-out.tsv \
 	maps/nomis-code.tsv
 
+lists/prison-estate/list.tsv: maps/prison-estate.tsv maps/designation-to-name-affix.tsv
+	ruby ./lib/code_length_check.rb
+	csvcut -tc name,designation,operator lists/prison-estate/prison_estate.tsv \
+	| csvformat -T \
+	> $@.tmp
+
+	csvjoin -tc name $@.tmp maps/prison-estate.tsv \
+	| csvcut -c prison,name,designation,operator \
+	| csvformat -T \
+	> $@.tmp2
+
+	csvjoin -tc designation $@.tmp2 maps/designation-to-name-affix.tsv \
+	| csvcut -c prison,prefix,name,suffix,designation,operator \
+	| csvformat -T \
+	> $@
+
+	rm -f $@.tmp
+	rm -f $@.tmp2
+
+maps/prison-estate.tsv:
+	# manually edited file
+
+maps/designation-to-name-affix.tsv:
+	# manually edited file
+
 ../address-discovery-data-matching/maps/prison.tsv: Gemfile.lock
 	bundle exec ruby ./lists/addresses/lib/address_street_postcode_data_map.rb > $@
 
 ../address-discovery-data/maps/prison.tsv: ../address-discovery-data-matching/maps/prison.tsv
 	bundle exec ruby ./lists/addresses/lib/address_data_map.rb > $@
 
-data/prison/prison.tsv: Gemfile.lock
-	bundle exec ruby ./lists/addresses/lib/prison_data.rb > $@
+data/prison/prison.tsv: Gemfile.lock lists/prison-estate/list.tsv
+	bundle exec ruby ./lib/prison_data.rb > $@
 
 maps/address.tsv: ../address-discovery-data-matching/maps/prison.tsv
 	mkdir -p maps
@@ -37,3 +62,4 @@ clean:
 	rm -f data/prison/prison.tsv
 	rm -f ../address-discovery-data-matching/maps/prison.tsv
 	rm -f ../address-discovery-data/maps/prison.tsv
+	rm -f lists/prison-estate/list.tsv

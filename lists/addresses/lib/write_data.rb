@@ -1,47 +1,6 @@
 module WriteData
   class << self
 
-    def prefix estate
-      case estate.designation
-        when 'Dual Designated Prison'
-          'HMP/YOI'
-        when 'Prison'
-          'HMP'
-        when 'Young Offender Institution'
-          'HMYOI'
-        when 'Not in use'
-          if estate.name[/Blantyre House/]
-            'HMP'
-          else
-            '???'
-          end
-        when 'Secure Training Centre'
-          nil
-        when 'Immigration Removal Centre'
-          'HMIRC'
-        else
-          '???'
-      end
-    end
-
-    def suffix estate
-      if estate.designation == 'Secure Training Centre'
-        'STC'
-      end
-    end
-
-    def estate_name estate
-      if estate.name == 'Usk / Prescoed'
-        "HMP Usk and HMP/YOI Prescoed"
-      else
-        location = estate.name.
-          sub('Grendon/ Spring Hill','Grendon/Spring Hill').
-          sub('Mount, The','The Mount').
-          sub('Verne, The','The Verne')
-        [prefix(estate), location, suffix(estate)].compact.join(" ")
-      end
-    end
-
     def print_match prison, match
       puts '==='
       puts prison.to_s("<br/>")

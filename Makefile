@@ -4,17 +4,17 @@ target: data/prison/prison.tsv maps/address.tsv \
 	maps/nomis-code.tsv
 
 lists/prison-estate/list.tsv: maps/prison-estate.tsv maps/designation-to-name-affix.tsv
-	csvcut -tc name,designation lists/prison-estate/prison_estate.tsv \
+	csvcut -tc name,designation,operator lists/prison-estate/prison_estate.tsv \
 	| csvformat -T \
 	> $@.tmp
 
 	csvjoin -tc name $@.tmp maps/prison-estate.tsv \
-	| csvcut -c prison,name,designation \
+	| csvcut -c prison,name,designation,operator \
 	| csvformat -T \
 	> $@.tmp2
 
 	csvjoin -tc designation $@.tmp2 maps/designation-to-name-affix.tsv \
-	| csvcut -c prison,prefix,name,suffix,designation \
+	| csvcut -c prison,prefix,name,suffix,designation,operator \
 	| csvformat -T \
 	> $@
 

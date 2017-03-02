@@ -13,4 +13,4 @@ hmi:
   key: hmi
 contracted-out:
   description: Prison name in NOMS spend data over £25,000 files
-  key: contracted-out
+  key: name

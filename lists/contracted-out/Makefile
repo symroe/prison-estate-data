@@ -36,7 +36,7 @@ suppliers.csv:
 	| iconv -f ISO-8859-1 -t UTF-8 \
 	| csvgrep -c Description -m 'Prisons and detention centres operated by an external provider' \
 	| csvcut -c "Expense Area",Supplier \
-	| sed 's/^Expense Area,Supplier/location,supplier/' \
+	| sed 's/^Expense Area,Supplier/name,supplier/' \
 	| csvsort \
 	| uniq \
 	| sed 's/ LTD/ LIMITED/g' \

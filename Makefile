@@ -4,6 +4,7 @@ target: data/prison/prison.tsv maps/address.tsv \
 	maps/nomis-code.tsv
 
 lists/prison-estate/list.tsv: maps/prison-estate.tsv maps/designation-to-name-affix.tsv
+	ruby ./lib/code_length_check.rb
 	csvcut -tc name,designation,operator lists/prison-estate/prison_estate.tsv \
 	| csvformat -T \
 	> $@.tmp

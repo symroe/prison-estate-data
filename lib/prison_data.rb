@@ -38,13 +38,23 @@ def write_history prison
   end
 end
 
-def write_current_prisons prisons
+def operator code, contracted_out_map, contracted_out
+  if name = contracted_out_map[code].try(:first).try(:name)
+    if number = contracted_out[name].try(:first).try(:company)
+      "company:#{number}"
+    end
+  end
+end
+
+def write_current_prisons prisons, contracted_out_map, contracted_out
   prisons.each do |prison|
     fix_prefix! prison
     change_date = write_history prison
+    operator = operator prison.prison, contracted_out_map, contracted_out
     write(
       prison: prison.prison,
       name: [prison.prefix, prison.name, prison.suffix].select{|x| x.present?}.join(" "),
+      operator: operator,
       change_date: change_date
     )
   end
@@ -60,9 +70,11 @@ def write_former_prisons prisons
   end
 end
 
-current_prisons = Morph.from_tsv IO.read('./lists/prison-estate/list.tsv'), :prison
-former_prisons = Morph.from_tsv IO.read('./lists/former-prisons/prisons.tsv'), :former_prison
+current_prisons = Morph.from_tsv IO.read('./lists/prison-estate/list.tsv'), :prison ; nil
+former_prisons = Morph.from_tsv IO.read('./lists/former-prisons/prisons.tsv'), :former_prison ; nil
+contracted_out = Morph.from_tsv(IO.read('./lists/contracted-out/prisons.tsv'), :contracted_out).group_by(&:name) ; nil
+contracted_out_map = Morph.from_tsv(IO.read('./maps/contracted-out.tsv'), :contracted_out_map).group_by(&:prison) ; nil
 
 puts %w[prison name operator address change-date start-date end-date].join("\t")
-write_current_prisons current_prisons
+write_current_prisons current_prisons, contracted_out_map, contracted_out
 write_former_prisons former_prisons

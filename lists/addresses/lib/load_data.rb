@@ -99,8 +99,8 @@ module LoadData
     def contracted_out_prisons
       contracted_out = Morph.from_tsv read('../../contracted-out/prisons.tsv'), :contracted
       contracted_out.each do |x|
-        x.original_location = x.location
-        x.location = x.location.sub('G4S ','').sub('Sodexo ','')
+        x.original_location = x.name
+        x.name = x.name.sub('G4S ','').sub('Sodexo ','')
       end
       contracted_out
     end

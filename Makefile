@@ -1,6 +1,7 @@
 
 target: data/prison/prison.tsv maps/address.tsv \
 	maps/contracted-out.tsv \
+	maps/prison-finder.tsv \
 	maps/nomis-code.tsv
 
 lists/prison-estate/list.tsv: maps/prison-estate.tsv maps/designation-to-name-affix.tsv
@@ -54,6 +55,9 @@ maps/hmi.tsv:
 
 maps/prison-map-prison.tsv:
 	bundle exec ruby ./lists/addresses/lib/prison_finder_map.rb > $@
+
+maps/prison-finder.tsv:
+	bundle exec ruby ./lists/addresses/lib/prison_finder.rb > $@
 
 Gemfile.lock:
 	bundle install

@@ -11,6 +11,9 @@ nomis-code:
 hmi:
   description: HM Inspectorate of Prisons' report prison names
   key: hmi
+prison-finder:
+  description: Prison name from prison finder service
+  key: prison-finder
 contracted-out:
   description: Prison name in NOMS spend data over £25,000 files
   key: name

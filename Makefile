@@ -38,9 +38,9 @@ maps/designation-to-name-affix.tsv:
 data/prison/prison.tsv: Gemfile.lock lists/prison-estate/list.tsv
 	bundle exec ruby ./lib/prison_data.rb > $@
 
-maps/address.tsv: ../address-discovery-data-matching/maps/prison.tsv
+maps/address.tsv: ../address-discovery-data-matching/lists/prison-data/list.tsv
 	mkdir -p maps
-	csvcut -tc address,prison,name,name_cy ../address-discovery-data-matching/maps/prison.tsv \
+	csvcut -tc 9,1,10,15 ../address-discovery-data-matching/lists/prison-data/list.tsv \
 	| csvformat -T \
 	> $@
 

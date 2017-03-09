@@ -1,5 +1,5 @@
 
-target: data/prison/prison.tsv maps/address.tsv \
+target: data/prison/prison.tsv \
 	maps/contracted-out.tsv \
 	maps/prison-finder.tsv \
 	maps/nomis-code.tsv

@@ -7,6 +7,23 @@ a list of parts of the Prison Estate in England and Wales, including public and 
 | :---                             | :---:        | :---:        | :---:                       |
 | [prison](data/prison/prison.tsv) | 121          | 30           | 151                         |
 
+## What is a prison?
+
+A prison in the data is an administrative prison. These are the prisons as
+reported in the [prison annual performance ratings](https://www.gov.uk/government/statistics/prison-performance-statistics-2015-to-2016).
+
+In some systems, for example NOMIS (an internal system in the National
+Offender Management Service), a prison is based on location.
+
+A jointly-managed prison in the data for registers can be recorded as
+more than one prison in the NOMIS system. For example, here's register data
+and nomis data compared for two jointly-managed prison:
+
+| prison                                                | name                         | nomis-codes | nomis-names |
+| ---:   | :---                         | ---:       | :---        |
+| [UK](https://prison.alpha.openregister.org/record/UK) | HMP Usk and HMP/YOI Prescoed | UKI <br>UPI | USK (HMP) <br>PRESCOED (HMP & YOI)  |
+| [GN](https://prison.alpha.openregister.org/record/GN) | HMP Grendon/Spring Hill      | GNI <br>SPI | GRENDON (HMP) <br>SPRING HILL (HMP) |
+
 ## Maps
 
 Maps assist in the translation of existing codes and names to register records:

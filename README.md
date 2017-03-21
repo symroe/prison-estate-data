@@ -24,13 +24,27 @@ and nomis data compared for two jointly-managed prison:
 | [UK](https://prison.alpha.openregister.org/record/UK) | HMP Usk and HMP/YOI Prescoed | UKI <br>UPI | USK (HMP) <br>PRESCOED (HMP & YOI)  |
 | [GN](https://prison.alpha.openregister.org/record/GN) | HMP Grendon/Spring Hill      | GNI <br>SPI | GRENDON (HMP) <br>SPRING HILL (HMP) |
 
+## Prison data
+
+Here is an example of the fields in the prison data for registers:
+
+| Field       | Value |
+| :---        | :---  |
+| prison      | [AC](http://prison.alpha.openregister.org/record/AC) |
+| name        | HMP/YOI Altcourse |
+| operator    | [company:02984969](https://beta.companieshouse.gov.uk/company/02984969) |
+| address     | [38076557](http://address.discovery.openregister.org/record/38076557) |
+| start-date  | |
+| change-date | |
+| end-date    | |
+
 ## Maps
 
 Maps assist in the translation of existing codes and names to register records:
 
 | Map  | Fields |
 | :--- | :---   |
-  | [contracted-out](maps/contracted-out.tsv) | Prison name from [National Offender Management Service (NOMS) spend over £25,000 data](https://www.gov.uk/government/publications/national-offender-management-service-spend-over-25000-2016) |
+| [contracted-out](maps/contracted-out.tsv) | Prison name from [National Offender Management Service (NOMS) spend over £25,000 data](https://www.gov.uk/government/publications/national-offender-management-service-spend-over-25000-2016) |
 | [designation-to-name-affix](maps/designation-to-name-affix.tsv) | Prison designation to [prefix and suffix used in prison name](https://github.com/openregister/prison-data/blob/readme-update/lib/prison_data.rb#L66) |
 | [hmi](maps/hmi.tsv) | HM Inspectorate of Prisons name for prison in [inspection reports](https://www.justiceinspectorates.gov.uk/hmiprisons/inspections/) |
 | [nomis-code](maps/nomis-code.tsv) | NOMIS three letter code |

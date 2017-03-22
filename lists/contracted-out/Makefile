@@ -20,8 +20,8 @@ company-numbers.csv: companies.csv
 	)\
 	> $@
 
-companies.csv: suppliers.csv ../../../company-data/cache/companies.tsv
-	[[ -e $@ ]] || ./bin/get_companies.sh supplier ./suppliers.csv > $@
+companies.csv: suppliers.csv ../../../company-data/cache/companies.tsv bin/get_companies.sh
+	./bin/get_companies.sh supplier ./suppliers.csv > $@
 
 suppliers.csv:
 	(\

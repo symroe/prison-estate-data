@@ -55,7 +55,7 @@ Maps assist in the translation of existing codes and names to register records:
 
 ## Lists
 
-The data has been compiled from existing lists of registration districts found
+The data has been compiled from existing lists of prisons found
 in a number of different government datasets:
 
 | List | Source | Count |

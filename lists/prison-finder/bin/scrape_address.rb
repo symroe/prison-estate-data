@@ -80,6 +80,7 @@ def name_address_postcodes
 end
 
 def ignore? name
+  name.nil? ||
   name == 'CEM Abertawe' ||
   name == 'CEM Caerdydd' ||
   name == 'Usk/Prescoed' ||

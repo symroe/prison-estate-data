@@ -1,154 +1,154 @@
-prison	name	operator	address	change-date	start-date	end-date
-AC	HMP/YOI Altcourse	company:02984969	38076557			
-AS	HMP Ashfield	company:03403669	640757			
-AG	HMP/YOI Askham Grange		100052211414			
-AY	HMYOI Aylesbury		766259071			
-BF	HMP/YOI Bedford		100081206238			
-BA	HMP/YOI Belmarsh		100023266926			
-BW	HMP/YOI Berwyn					
-BM	HMP Birmingham	company:00390328	100071434380			
-BH	HMP Blantyre House		10000064793			
-BS	HMP/YOI Brinsford		200004529143			
-BL	HMP/YOI Bristol		221691			
-BX	HMP Brixton		200000487964			
-BZ	HMP/YOI Bronzefield	company:04334205	33043320			
-BC	HMP Buckley Hall		23107795			
-BN	HMP/YOI Bullingdon		100120801929			
-BR	HMP Bure		10023452387			
-CF	HMP/YOI Cardiff		200002933741			
-CW	HMP Channings Wood		10032952569			
-CD	HMP/YOI Chelmsford		200004625000			
-CL	HMP Coldingley		200001339117			
-CK	HMYOI Cookham Wood		100062374701			
-DA	HMP Dartmoor		10001330266			
-DT	HMYOI Deerbolt		10070413833			
-DN	HMP/YOI Doncaster	company:00242246	100052207601			
-DG	HMP Dovegate	company:03471077	10008039764			
-DW	HMP/YOI Downview		68136669			
-DH	HMP/YOI Drake Hall		10002088530			
-DM	HMP/YOI Durham		200001338985			
-ES	HMP/YOI East Sutton Park		10022897161			
-EW	HMP/YOI Eastwood Park		582216			
-EY	HMP/YOI Elmley		100062087837			
-EE	HMP Erlestoke		10000177465			
-EX	HMP/YOI Exeter		100041142520			
-FS	HMP Featherstone		100032229278			
-FM	HMYOI Feltham		100023398319			
-FD	HMP Ford		200002714169			
-FB	HMP/YOI Forest Bank	company:03509050	100012692516			
-FH	HMP/YOI Foston Hall		10000819194			
-FK	HMP Frankland		10001009852			
-FN	HMP Full Sutton		200000641988			
-GH	HMP Garth		200004064874			
-GT	HMP Gartree		100030489952			
-GP	HMP/YOI Glen Parva		10010147357			
-GN	HMP Grendon/Spring Hill		766293688			
-GM	HMP Guys Marsh		10071151030			
-HD	HMP/YOI Hatfield		100050785306			
-HV	HMP Haverigg		100110755872			
-HE	HMP/YOI Hewell		100121267010			
-HO	HMP/YOI High Down		100062499824			
-HP	HMP Highpoint		10090740900			
-HI	HMP/YOI Hindley		100012815264			
-HB	HMP/YOI Hollesley Bay		10008620964			
-HH	HMP/YOI Holme House		100110796240			
-HL	HMP/YOI Hull		21138448			
-HM	HMP Humber		200000644367			
-HC	HMP Huntercombe		100121308432			
-IS	HMP/YOI Isis		10010227766			
-IW	HMP/YOI Isle of Wight		10003332444			
-KM	HMP Kirkham		100012390917			
-KV	HMP/YOI Kirklevington Grange		10090294422			
-LF	HMP Lancaster Farms		200001339049			
-LE	HMP Leeds		72079826			
-LC	HMP Leicester		2465057785			
-LW	HMP/YOI Lewes		100062273779			
-LY	HMP Leyhill		582486			
-LI	HMP/YOI Lincoln		235033467			
-LH	HMP Lindholme		10006712272			
-LT	HMP Littlehey		10000161141			
-LP	HMP Liverpool		38079136			
-LL	HMP Long Lartin		10013943723			
-LN	HMP/YOI Low Newton		100110739224			
-LG	HMP Lowdham Grange	company:03154430	10008170171			
-MS	HMP Maidstone		200003717305			
-MR	HMP/YOI Manchester		10023053062			
-MW	Medway STC		100062374701			
-MD	HMP/YOI Moorland		100051984633			
-MH	HMP Morton Hall		10006531346			
-MH	HMIRC Morton Hall		10006531346	2011-05		
-NH	HMP/YOI New Hall		63141057			
-NS	HMP North Sea Camp		100032166609			
-NL	HMP Northumberland	company:00842846	10024651947			
-NW	HMP/YOI Norwich		10009434824			
-NM	HMP/YOI Nottingham		200001412499			
-OW	HMP Oakwood	company:00390328	10090090220			
-ON	HMP Onley		28013722			
-PR	HMP/YOI Parc	company:03045222	200002656535			
-PV	HMP/YOI Pentonville		5300014341			
-PB	HMP/YOI Peterborough	company:04350276	10008051379			
-PD	HMP/YOI Portland		10070567623			
-PN	HMP/YOI Preston		100012746893			
-RN	HMP Ranby		10013978351			
-RS	HMP Risley		100012381987			
-RC	HMP/YOI Rochester		44010823			
-RH	HMP Rye Hill	company:03682678	28042679			
-SD	HMP/YOI Send		10007066161			
-SF	HMP Stafford		200001335547			
-EH	HMP/YOI Standford Hill		200002533135			
-SK	HMP Stocken		10008626900			
-SH	HMP/YOI Stoke Heath		10013133936			
-ST	HMP/YOI Styal		100012881776			
-SU	HMP/YOI Sudbury		10070076922			
-SL	HMP Swaleside		100062087838			
-SW	HMP/YOI Swansea		100100986762			
-SN	HMP/YOI Swinfen Hall		10013212207			
-TS	HMP/YOI Thameside	company:07279250	10010227695			
-MT	HMP The Mount		200004050582			
-VE	HMP The Verne		10070565745			
-VE	HMIRC The Verne		10070565745	2014-05		
-TC	HMP/YOI Thorn Cross		200000978972			
-UK	HMP Usk and HMP/YOI Prescoed		200000955803			
-WD	HMP Wakefield		63131104			
-WW	HMP/YOI Wandsworth		121050999			
-WI	HMP/YOI Warren Hill		10008620969			
-WL	HMP Wayland		10011970324			
-WE	HMP Wealstun		72384891			
-WN	HMYOI Werrington		200001581565			
-WY	HMYOI Wetherby		72555064			
-WT	HMP Whatton		3040053432			
-WR	HMP Whitemoor		100091516265			
-WC	HMP/YOI Winchester		100062015988			
-WH	HMP/YOI Woodhill		25006001			
-WS	HMP/YOI Wormwood Scrubs		34020469			
-WM	HMP/YOI Wymott		200004064883			
-AK	HMP Acklington		2920005642			2011-10-31
-AL	HMP Albany		10003332444			2009-04
-AW	HMP Ashwell		100030715098			2011-03
-BT	HMP Blakenhurst		100121267009			2008-06-25
-BD	HMP Blundeston		100091568382			2013-09
-BK	HMP Brockhill		100120586678			2008-06-25
-BU	HMP Bullwood Hall		200000266767			2013-01
-CH	HMP Camp Hill		10003316343			2009-04
-CY	HMP Canterbury					2013-03-31
-CS	HMP Castington		2920009030			2011-10-31
-DR	HMP Dorchester					2013-12
-DV	HMIRC Dover		10034883299			2015
-NE	HMP Edmunds Hill		10023127022			2011-04
-EV	HMP Everthorpe		200000644359			2014-04
-GL	HMP Gloucester		200004486808			2013
-HR	HMIRC Haslar		37032487			2015
-HG	HMP Hewell Grange					2008-06-25
-HY	HMP Holloway		5300071065			2016-05
-KT	HMP Kennet		41218084			2016-12
-PT	HMP Kingston		1775056170			2013-03-28
-LM	HMP Latchmere House					2011-09
-LA	HMP Lancaster					2011-03
-NN	HMP Northallerton		100050366776			2013-12
-PK	HMP Parkhurst		10003332443			2009-04
-RD	HMP Reading					2013-11
-SM	HMP Shepton Mallet		250022303			2013-02-28
-SY	HMP Shrewsbury		100071531042			2013-03
-WA	HMP The Weare		10070569459			2006
-WB	HMP Wellingborough		10023681392			2012-12-21
-WO	HMP Wolds					2014-04
+prison	name	operator	change-date	start-date	end-date
+AC	HMP/YOI Altcourse	company:02984969			
+AS	HMP Ashfield	company:03403669			
+AG	HMP/YOI Askham Grange				
+AY	HMYOI Aylesbury				
+BF	HMP/YOI Bedford				
+BA	HMP/YOI Belmarsh				
+BW	HMP/YOI Berwyn				
+BM	HMP Birmingham	company:00390328			
+BH	HMP Blantyre House				
+BS	HMP/YOI Brinsford				
+BL	HMP/YOI Bristol				
+BX	HMP Brixton				
+BZ	HMP/YOI Bronzefield	company:04334205			
+BC	HMP Buckley Hall				
+BN	HMP/YOI Bullingdon				
+BR	HMP Bure				
+CF	HMP/YOI Cardiff				
+CW	HMP Channings Wood				
+CD	HMP/YOI Chelmsford				
+CL	HMP Coldingley				
+CK	HMYOI Cookham Wood				
+DA	HMP Dartmoor				
+DT	HMYOI Deerbolt				
+DN	HMP/YOI Doncaster	company:00242246			
+DG	HMP Dovegate	company:03471077			
+DW	HMP/YOI Downview				
+DH	HMP/YOI Drake Hall				
+DM	HMP/YOI Durham				
+ES	HMP/YOI East Sutton Park				
+EW	HMP/YOI Eastwood Park				
+EY	HMP/YOI Elmley				
+EE	HMP Erlestoke				
+EX	HMP/YOI Exeter				
+FS	HMP Featherstone				
+FM	HMYOI Feltham				
+FD	HMP Ford				
+FB	HMP/YOI Forest Bank	company:03509050			
+FH	HMP/YOI Foston Hall				
+FK	HMP Frankland				
+FN	HMP Full Sutton				
+GH	HMP Garth				
+GT	HMP Gartree				
+GP	HMP/YOI Glen Parva				
+GN	HMP Grendon/Spring Hill				
+GM	HMP Guys Marsh				
+HD	HMP/YOI Hatfield				
+HV	HMP Haverigg				
+HE	HMP/YOI Hewell				
+HO	HMP/YOI High Down				
+HP	HMP Highpoint				
+HI	HMP/YOI Hindley				
+HB	HMP/YOI Hollesley Bay				
+HH	HMP/YOI Holme House				
+HL	HMP/YOI Hull				
+HM	HMP Humber				
+HC	HMP Huntercombe				
+IS	HMP/YOI Isis				
+IW	HMP/YOI Isle of Wight				
+KM	HMP Kirkham				
+KV	HMP/YOI Kirklevington Grange				
+LF	HMP Lancaster Farms				
+LE	HMP Leeds				
+LC	HMP Leicester				
+LW	HMP/YOI Lewes				
+LY	HMP Leyhill				
+LI	HMP/YOI Lincoln				
+LH	HMP Lindholme				
+LT	HMP Littlehey				
+LP	HMP Liverpool				
+LL	HMP Long Lartin				
+LN	HMP/YOI Low Newton				
+LG	HMP Lowdham Grange	company:03154430			
+MS	HMP Maidstone				
+MR	HMP/YOI Manchester				
+MW	Medway STC				
+MD	HMP/YOI Moorland				
+MH	HMP Morton Hall				
+MH	HMIRC Morton Hall		2011-05		
+NH	HMP/YOI New Hall				
+NS	HMP North Sea Camp				
+NL	HMP Northumberland	company:00842846			
+NW	HMP/YOI Norwich				
+NM	HMP/YOI Nottingham				
+OW	HMP Oakwood	company:00390328			
+ON	HMP Onley				
+PR	HMP/YOI Parc	company:03045222			
+PV	HMP/YOI Pentonville				
+PB	HMP/YOI Peterborough	company:04350276			
+PD	HMP/YOI Portland				
+PN	HMP/YOI Preston				
+RN	HMP Ranby				
+RS	HMP Risley				
+RC	HMP/YOI Rochester				
+RH	HMP Rye Hill	company:03682678			
+SD	HMP/YOI Send				
+SF	HMP Stafford				
+EH	HMP/YOI Standford Hill				
+SK	HMP Stocken				
+SH	HMP/YOI Stoke Heath				
+ST	HMP/YOI Styal				
+SU	HMP/YOI Sudbury				
+SL	HMP Swaleside				
+SW	HMP/YOI Swansea				
+SN	HMP/YOI Swinfen Hall				
+TS	HMP/YOI Thameside	company:07279250			
+MT	HMP The Mount				
+VE	HMP The Verne				
+VE	HMIRC The Verne		2014-05		
+TC	HMP/YOI Thorn Cross				
+UK	HMP Usk and HMP/YOI Prescoed				
+WD	HMP Wakefield				
+WW	HMP/YOI Wandsworth				
+WI	HMP/YOI Warren Hill				
+WL	HMP Wayland				
+WE	HMP Wealstun				
+WN	HMYOI Werrington				
+WY	HMYOI Wetherby				
+WT	HMP Whatton				
+WR	HMP Whitemoor				
+WC	HMP/YOI Winchester				
+WH	HMP/YOI Woodhill				
+WS	HMP/YOI Wormwood Scrubs				
+WM	HMP/YOI Wymott				
+AK	HMP Acklington				2011-10-31
+AL	HMP Albany				2009-04
+AW	HMP Ashwell				2011-03
+BT	HMP Blakenhurst				2008-06-25
+BD	HMP Blundeston				2013-09
+BK	HMP Brockhill				2008-06-25
+BU	HMP Bullwood Hall				2013-01
+CH	HMP Camp Hill				2009-04
+CY	HMP Canterbury				2013-03-31
+CS	HMP Castington				2011-10-31
+DR	HMP Dorchester				2013-12
+DV	HMIRC Dover				2015
+NE	HMP Edmunds Hill				2011-04
+EV	HMP Everthorpe				2014-04
+GL	HMP Gloucester				2013
+HR	HMIRC Haslar				2015
+HG	HMP Hewell Grange				2008-06-25
+HY	HMP Holloway				2016-05
+KT	HMP Kennet				2016-12
+PT	HMP Kingston				2013-03-28
+LM	HMP Latchmere House				2011-09
+LA	HMP Lancaster				2011-03
+NN	HMP Northallerton				2013-12
+PK	HMP Parkhurst				2009-04
+RD	HMP Reading				2013-11
+SM	HMP Shepton Mallet				2013-02-28
+SY	HMP Shrewsbury				2013-03
+WA	HMP The Weare				2006
+WB	HMP Wellingborough				2012-12-21
+WO	HMP Wolds				2014-04
